@@ -1,0 +1,12 @@
+.banner{
+    min-height: fit-content;
+    background:
+            radial-gradient(at -15% 95%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%),
+            radial-gradient(circle at 60% 60%, rgba(71, 84, 235, 0.4) -30%, transparent 30%),
+            radial-gradient(at 80% 120%, rgba(71, 84, 235, 0.3) -15%, #fff 35%);
+
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+}

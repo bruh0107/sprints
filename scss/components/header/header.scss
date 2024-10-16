@@ -1,0 +1,53 @@
+.header{
+
+  &-logo{
+    color: $color-blue;
+    font-family: "VisueltPro-Medium", sans-serif;
+    font-size: 18px;
+  }
+
+  &-block{
+    display: flex;
+    height: fit-content;
+    padding: 16px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-inner{
+    display: flex;
+    gap: 95px;
+    align-items: center;
+  }
+
+  &-interaction{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: $main-grey;
+
+    & span:first-child{
+      font-family: "VisueltPro-Medium", sans-serif;
+      color: $color-blue;
+    }
+  }
+
+  &-navigation{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    &__link{
+      color: $main-grey;
+    }
+  }
+
+  &-button{
+    padding: 14px 24px;
+    border-radius: 16px;
+    border: none;
+    background: $color-blue;
+    color: $main-white;
+    font-size: 18px;
+    font-family: "VisueltPro-Medium", sans-serif;
+  }
+}

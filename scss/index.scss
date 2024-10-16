@@ -1,0 +1,14 @@
+@import "./common";
+@import "./components/header";
+@import "./components/main-banner";
+
+body{
+  padding: 24px;
+  background: $main-bg;
+
+  .wrapper{
+    background: $main-white;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+}

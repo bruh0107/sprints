@@ -1,0 +1,100 @@
+@font-face {
+  src: url("../../fonts/VisueltPro-Regular.ttf");
+  font-family: "VisueltPro-Regular";
+}
+@font-face {
+  src: url("../../fonts/VisueltPro-Medium.ttf");
+  font-family: "VisueltPro-Medium";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+@font-face {
+  src: url("../../fonts/VisueltPro-Regular.ttf");
+  font-family: "VisueltPro-Regular";
+}
+@font-face {
+  src: url("../../fonts/VisueltPro-Medium.ttf");
+  font-family: "VisueltPro-Medium";
+}
+body {
+  font-family: "VisuelPro-regular", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.header-logo {
+  color: rgb(71, 84, 235);
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-size: 18px;
+}
+.header-block {
+  display: flex;
+  height: fit-content;
+  padding: 16px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-inner {
+  display: flex;
+  gap: 95px;
+  align-items: center;
+}
+.header-interaction {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  color: #808080;
+}
+.header-interaction span:first-child {
+  font-family: "VisueltPro-Medium", sans-serif;
+  color: rgb(71, 84, 235);
+}
+.header-navigation {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.header-navigation__link {
+  color: #808080;
+}
+.header-button {
+  padding: 14px 24px;
+  border-radius: 16px;
+  border: none;
+  background: rgb(71, 84, 235);
+  color: #fff;
+  font-size: 18px;
+  font-family: "VisueltPro-Medium", sans-serif;
+}
+
+.banner {
+  min-height: fit-content;
+  background: radial-gradient(at -15% 95%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%), radial-gradient(circle at 60% 60%, rgba(71, 84, 235, 0.4) -30%, transparent 30%), radial-gradient(at 80% 120%, rgba(71, 84, 235, 0.3) -15%, #fff 35%);
+}
+.banner-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  padding: 24px;
+  background: #f2f2f2;
+}
+body .wrapper {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */

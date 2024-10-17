@@ -31,6 +31,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1280px;
+  width: 100%;
 }
 
 .header-logo {
@@ -79,12 +80,12 @@ body {
 }
 
 .banner {
-  min-height: fit-content;
   background: radial-gradient(at -15% 95%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%), radial-gradient(circle at 60% 60%, rgba(71, 84, 235, 0.4) -30%, transparent 30%), radial-gradient(at 80% 120%, rgba(71, 84, 235, 0.3) -15%, #fff 35%);
 }
 .banner-inner {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .banner-block {
   display: flex;
@@ -99,8 +100,19 @@ body {
 .banner-block .user-agreement > span {
   color: rgb(71, 84, 235);
 }
+.banner-interaction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  bottom: 80px;
+}
+.banner-interaction span {
+  color: #fff;
+}
 .banner-title {
   font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
   font-size: 56px;
   color: #1a1a1a;
   line-height: 1.25;
@@ -131,34 +143,135 @@ body {
   cursor: pointer;
 }
 
-.card {
+.advantages {
   padding: 79px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
 }
-.card .title {
+.advantages > .container:last-child {
+  max-width: 1344px;
+}
+.advantages .title {
   font-family: "VisueltPro-Medium", sans-serif;
   font-size: 36px;
-  margin-bottom: 54px;
+  font-weight: 400;
+  text-align: start;
+  color: #1a1a1a;
 }
-.card-inner {
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.advantages-title {
+  background: rgba(255, 255, 255, 0.5);
   display: flex;
-  gap: 70px;
+  gap: 12px;
+  align-items: center;
 }
-.card-text {
-  width: 389px;
+.advantages-title-text {
+  color: #1a1a1a;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-size: 18px;
+}
+.advantages-block {
+  backdrop-filter: blur(24px);
+  box-shadow: 0 4px 20px 0 rgba(25, 25, 25, 0.05);
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.advantages-text {
+  color: #808080;
+  font-family: "VisueltPro-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.work {
+  background: radial-gradient(at 90% -10%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%), radial-gradient(circle at 10% 70%, rgba(235, 71, 135, 0.2) 10%, transparent 30%);
+}
+.work-inner {
+  padding: 80px 0;
+}
+.work-title {
+  font-family: "VisueltPro-Regular", sans-serif;
+  font-size: 36px;
+  color: #1a1a1a;
+  margin-bottom: 41px;
+}
+.work-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: center;
+}
+.work-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 463px;
+  align-items: start;
+}
+.work-info__title {
+  font-size: 36px;
+  color: #1a1a1a;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.work-info__under-title {
+  font-family: "VisueltPro-Medium", sans-serif;
+  color: rgb(71, 84, 235);
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.work-info__description {
   font-size: 18px;
   color: #808080;
   font-family: "VisueltPro-Regular", sans-serif;
-  line-height: 1.3;
+  line-height: 135%;
 }
-.card-title {
+.work-info__description-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 71px;
+}
+.work-info__button {
+  padding: 16px 24px;
+  background: rgb(71, 84, 235);
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-family: "VisueltPro-Medium", sans-serif;
+  line-height: 135%;
+  font-size: 18px;
+}
+.work-scroll {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 16px;
+  margin-bottom: 30px;
 }
-.card-title-text {
+.work-scroll_blue {
+  font-size: 18px;
   font-family: "VisueltPro-Medium", sans-serif;
-  font-size: 24px;
+  color: rgb(71, 84, 235);
+}
+.work-scroll_white {
+  font-family: "VisueltPro-Regular", sans-serif;
+  color: #fff;
+  font-size: 18px;
+}
+.work-scroll__line {
+  width: 24px;
+  height: 1px;
+  background: #fff;
 }
 
 body {

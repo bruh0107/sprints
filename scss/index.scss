@@ -1,7 +1,9 @@
-@import "./common";
-@import "./components/header";
-@import "./components/main-banner";
-@import "./components/card";
+@import "common";
+@import "components/header";
+@import "components/main-banner";
+@import "components/card";
+@import "components/work";
+@import "components/tariffs";
 
 body{
   padding: 24px;

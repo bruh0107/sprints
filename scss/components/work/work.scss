@@ -1,0 +1,84 @@
+.work{
+  background: radial-gradient(at 90% -10%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%),
+              radial-gradient(circle at 10% 70%, rgba(235, 71, 135, 0.2) 10%, transparent 30%);
+
+  &-inner{
+    padding: 80px 0;
+  }
+  &-title{
+    font-family: "VisueltPro-Regular", sans-serif;
+    font-size: 36px;
+    color: $main-black;
+    margin-bottom: 41px;
+  }
+  &-block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    align-items: center;
+  }
+  &-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 463px;
+    align-items: start;
+
+    &__title{
+      font-size: 36px;
+      color: $main-black;
+      font-family: "VisueltPro-Medium", sans-serif;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+    &__under-title{
+      font-family: "VisueltPro-Medium", sans-serif;
+      color: $color-blue;
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    &__description{
+      font-size: 18px;
+      color: $main-grey;
+      font-family: "VisueltPro-Regular", sans-serif;
+      line-height: 135%;
+    }
+    &__description-block{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 71px;
+    }
+    &__button{
+      padding: 16px 24px;
+      background: $color-blue;
+      color: $main-white;
+      border: none;
+      border-radius: 16px;
+      font-family: "VisueltPro-Medium", sans-serif;
+      line-height: 135%;
+      font-size: 18px;
+    }
+  }
+  &-scroll{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+
+    &_blue{
+      font-size: 18px;
+      font-family: "VisueltPro-Medium", sans-serif;
+      color: $color-blue;
+    }
+    &_white{
+      font-family: "VisueltPro-Regular", sans-serif;
+      color: $main-white;
+      font-size: 18px;
+    }
+    &__line{
+      width: 24px;
+      height: 1px;
+      background: $main-white;
+    }
+  }
+}

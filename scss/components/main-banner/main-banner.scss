@@ -1,5 +1,4 @@
 .banner{
-    min-height: fit-content;
     background:
             radial-gradient(at -15% 95%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%),
             radial-gradient(circle at 60% 60%, rgba(71, 84, 235, 0.4) -30%, transparent 30%),
@@ -8,6 +7,7 @@
   &-inner{
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
   &-block{
     display: flex;
@@ -24,8 +24,20 @@
       }
     }
   }
+  &-interaction{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    bottom: 80px;
+
+    & span{
+      color: $main-white;
+    }
+  }
   &-title{
     font-family: "VisueltPro-Medium", sans-serif;
+    font-weight: 400;
     font-size: 56px;
     color: $main-black;
     line-height: 1.25;

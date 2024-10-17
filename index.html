@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Задание №1, Инстаботы</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -37,7 +39,7 @@
             <div class="container">
                 <div class="banner-inner">
                     <article class="banner-block">
-                        <p class="banner-title">Высокий уровень<br> вовлечения<br> представителей</p>
+                        <h1 class="banner-title">Высокий уровень<br> вовлечения<br> представителей</h1>
                         <div class="banner-form">
                             <input class="banner-input" type="email" placeholder="Введите свой e-mail">
                             <button class="banner-button">Отправить</button>
@@ -46,21 +48,27 @@
                             Нажимая на кнопку вы соглашаетесь на обработку<br>
                             <span>персональных данных</span>
                         </p>
+                        <div class="banner-interaction">
+                            <img src="images/wheeldown.svg" alt="wheeldown">
+                            <span>Листайте дальше</span>
+                        </div>
                     </article>
                     <img src="images/banner-img.svg" alt="banner-img">
                 </div>
             </div>
         </section>
-        <section class="card">
+        <section class="advantages">
             <div class="container">
-                <p class="title">Наши преимущества</p>
-                <div class="card-inner">
-                    <article class="card-block">
-                        <div class="card-title">
-                            <img class="card-title-img" src="images/emoji-1.png" alt="emoji-1">
-                            <p class="card-title-text">Легко и просто</p>
+                <h2 class="title">Наши преимущества</h2>
+            </div>
+            <div class="container">
+                <div class="advantages-list">
+                    <article class="advantages-block">
+                        <div class="advantages-title">
+                            <img class="advantages-title-img" src="images/emoji-1.png" alt="emoji-1">
+                            <p class="advantages-title-text">Легко и просто</p>
                         </div>
-                        <p class="card-text">
+                        <p class="advantages-text">
                             Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit.
                             Malesuada gravida nisi sit felis odio.
@@ -69,12 +77,12 @@
                             Congue arcu turpis est, aliquet porttitor.
                         </p>
                     </article>
-                    <article class="card-block">
-                        <div class="card-title">
-                            <img class="card-title-img" src="images/emoji-2.png" alt="emoji-1">
-                            <p class="card-title-text">Быстро и доступно</p>
+                    <article class="advantages-block">
+                        <div class="advantages-title">
+                            <img class="advantages-title-img" src="images/emoji-2.png" alt="emoji-2">
+                            <p class="advantages-title-text">Быстро и доступно</p>
                         </div>
-                        <p class="card-text">
+                        <p class="advantages-text">
                             Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit.
                             Malesuada gravida nisi sit felis odio.
@@ -83,12 +91,12 @@
                             Congue arcu turpis est, aliquet porttitor.
                         </p>
                     </article>
-                    <article class="card-block">
-                        <div class="card-title">
-                            <img class="card-title-img" src="images/emoji-3.png" alt="emoji-1">
-                            <p class="card-title-text">А главное, качественно</p>
+                    <article class="advantages-block">
+                        <div class="advantages-title">
+                            <img class="advantages-title-img" src="images/emoji-3.png" alt="emoji-3">
+                            <p class="advantages-title-text">А главное, качественно</p>
                         </div>
-                        <p class="card-text">
+                        <p class="advantages-text">
                             Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit.
                             Malesuada gravida nisi sit felis odio.
@@ -98,6 +106,53 @@
                         </p>
                     </article>
                 </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <div class="work-inner">
+                    <h2 class="work-title">Как мы работаем</h2>
+                    <article class="work-block">
+                        <div class="work-img">
+                            <img src="images/work-img.svg" alt="work-img">
+                        </div>
+                        <div class="work-info">
+                            <div class="work-scroll">
+                                <span class="work-scroll_blue">Lorem ipsum</span>
+                                <div class="work-scroll__line"></div>
+                                <span class="work-scroll_white">Lorem ipsum</span>
+                                <div class="work-scroll__line"></div>
+                                <span class="work-scroll_white">Lorem ipsum</span>
+                            </div>
+                            <h2 class="work-info__title">Lorem ipsum dolor sit amet, consectetur.</h2>
+                            <span class="work-info__under-title">Semper sollicitudin ut cursus nunc eu ultricies.</span>
+                            <div class="work-info__description-block">
+                                <p class="work-info__description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Posuere lorem nulla tincidunt egestas nibh.
+                                    Non orci, et massa sed vulputate proin.
+                                    Eu euismod diam, arcu sit vitae nam. Tristique orci,
+                                    ornare sit vel amet.
+                                </p>
+                                <p class="work-info__description">
+                                    Ut elit dui iaculis malesuada in auctor dui.
+                                    Sollicitudin varius vitae ut vitae lacus,
+                                    sem dolor fermentum enim. Orci orci interdum
+                                    pretium adipiscing augue sit nisl adipiscing.
+                                </p>
+                            </div>
+                            <button class="work-info__button">Забронировать звонок</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="tariffs">
+            <div class="container">
+                <h2 class="title">Наши преимущества</h2>
+            </div>
+            <div class="container">
+
             </div>
         </section>
     </main>

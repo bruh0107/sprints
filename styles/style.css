@@ -165,10 +165,11 @@ body {
   gap: 16px;
 }
 .advantages-title {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgb(252, 252, 252);
   display: flex;
   gap: 12px;
   align-items: center;
+  padding: 12px 16px;
 }
 .advantages-title-text {
   color: #1a1a1a;
@@ -178,19 +179,19 @@ body {
 .advantages-block {
   backdrop-filter: blur(24px);
   box-shadow: 0 4px 20px 0 rgba(25, 25, 25, 0.05);
-  background: rgba(255, 255, 255, 0.5);
+  background: rgb(249, 249, 249);
   border-radius: 24px;
   overflow: hidden;
-  padding: 22px;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  border: 1px solid #fff;
 }
 .advantages-text {
   color: #808080;
   font-family: "VisueltPro-Regular", sans-serif;
   font-size: 18px;
   line-height: 1.3;
+  padding: 24px;
 }
 
 .work {
@@ -296,22 +297,21 @@ body {
   gap: 24px;
 }
 .tariffs-block {
-  padding: 22px;
   backdrop-filter: blur(24px);
   box-shadow: 0 4px 20px 0 rgba(25, 25, 25, 0.05);
-  background: rgba(249, 249, 249, 0.5);
+  background: rgb(249, 249, 249);
   display: flex;
   flex-direction: column;
-  gap: 44px;
   border-radius: 24px;
   border: 1px solid #fff;
   overflow: hidden;
 }
 .tariffs-rate {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgb(252, 252, 252);
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding: 20px 24px;
 }
 .tariffs-rate__level {
   color: #1a1a1a;
@@ -331,6 +331,8 @@ body {
   flex-direction: column;
   gap: 16px;
   align-items: center;
+  list-style-type: none;
+  padding: 24px 22px;
 }
 .tariffs-points__item {
   display: flex;
@@ -353,6 +355,174 @@ body {
   border: none;
   border-radius: 16px;
   cursor: pointer;
+}
+
+.reviews {
+  padding: 80px 0;
+  min-height: 800px;
+  background: radial-gradient(circle at 105% -15%, rgba(235, 71, 139, 0.3) 5%, rgba(151, 49, 135, 0.3) 20%, transparent 35%), radial-gradient(at 85% 130%, rgba(134, 51, 176, 0.4) 13%, rgba(112, 71, 235, 0.3) 18%, transparent 35%);
+  display: flex;
+}
+.reviews .container {
+  flex: 1;
+}
+.reviews-inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100%;
+}
+.reviews-title {
+  font-size: 36px;
+  line-height: 112%;
+  color: #1a1a1a;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
+}
+.reviews-list {
+  position: relative;
+  min-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.reviews-top {
+  display: flex;
+  padding: 16px 24px 16px 16px;
+  background: rgb(252, 252, 252);
+  justify-content: space-between;
+  align-items: center;
+}
+.reviews-bottom {
+  padding: 16px 24px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  align-items: start;
+}
+.reviews-profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.reviews-profile__name {
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #1a1a1a;
+}
+.reviews-block {
+  max-width: 628px;
+  backdrop-filter: blur(240px);
+  box-shadow: -2px 4px 20px 0 rgba(25, 25, 25, 0.03);
+  background: rgb(249, 249, 249);
+  position: absolute;
+}
+.reviews-date {
+  font-size: 18px;
+  line-height: 135%;
+  font-family: "VisueltPro-Regular", sans-serif;
+  color: #808080;
+}
+.reviews-text {
+  font-size: 18px;
+  line-height: 135%;
+  color: #808080;
+  font-family: "VisueltPro-Regular", sans-serif;
+}
+.reviews-block:nth-child(1) {
+  z-index: 1;
+  top: 96px;
+}
+.reviews-block:nth-child(2) {
+  z-index: 2;
+  top: 360px;
+  left: 164px;
+}
+.reviews-block:nth-child(3) {
+  z-index: 4;
+  top: 40px;
+  left: 326px;
+}
+.reviews-block:nth-child(4) {
+  z-index: 3;
+  top: 232px;
+  right: 0;
+}
+.reviews-button {
+  position: absolute;
+  padding: 16px 24px;
+  right: 0;
+  bottom: 0;
+  border: none;
+  background: #fff;
+  color: rgb(71, 84, 235);
+  border-radius: 16px;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-size: 18px;
+  line-height: 135%;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.sale-info {
+  padding: 88px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+.sale-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.sale-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+.sale-form__email {
+  display: flex;
+  background: rgb(242, 242, 242);
+  padding: 8px 8px 8px 16px;
+  border-radius: 16px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 465px;
+}
+.sale-form__button {
+  padding: 12px 24px;
+  border: none;
+  color: #fff;
+  background: rgb(71, 84, 235);
+  border-radius: 12px;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+.sale-form__input {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+}
+.sale-form__agreement-text {
+  color: rgb(89, 89, 89);
+  font-size: 12px;
+  line-height: 135%;
+  font-family: "VisueltPro-Regular", sans-serif;
+}
+.sale-form__agreement-blue {
+  color: #505dec;
+}
+.sale-title {
+  color: #1a1a1a;
+  font-size: 56px;
+  line-height: 125%;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
 }
 
 body {

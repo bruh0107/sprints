@@ -444,15 +444,17 @@
                         </div>
                         <form class="feedback-form">
                             <div class="feedback-form__input">
-                                <input class="feedback-form__input-email" type="email" placeholder="Введите свой e-mail">
-                                <input class="feedback-form__input-tel" type="tel" placeholder="Номер мобильного телефона">
-                                <input class="feedback-form__input-inst" type="text" placeholder="Никнейм в Instagram">
-                                <textarea cols="30" rows="5"
+                                <input class="feedback-form__input-field" type="email" placeholder="Введите свой e-mail">
+                                <input class="feedback-form__input-field" type="tel" placeholder="Номер мобильного телефона">
+                                <input class="feedback-form__input-field" type="text" placeholder="Никнейм в Instagram">
+                                <textarea class="feedback-form__input-field" rows="2"
                                           placeholder="Что вы бы хотели спросить о росте в Instagram"></textarea>
                             </div>
                             <div class="feedback-form__sending">
                                 <button class="feedback-form__button">Отправить заявку</button>
-                                <p class="user-agreement">Нажимая на кнопку вы соглашаетесь на обработку персональных данных</p>
+                                <p class="user-agreement">
+                                    Нажимая на кнопку вы соглашаетесь на обработку
+                                    <span class="user-agreement__blue">персональных данных</span></p>
                             </div>
                         </form>
                     </div>
@@ -463,6 +465,21 @@
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer-info">
+                    <h2 class="footer-logo">Инстаботы</h2>
+                    <p class="footer-copyright">&copy; 2021 Copyright reserved<br>
+                        Instabots</p>
+                </div>
+                <a href="#" class="scroll">
+                    <span class="scroll-text">Вернуться наверх</span>
+                    <img src="images/scroll-arrow.svg" alt="scroll arrow">
+                </a>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

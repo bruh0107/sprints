@@ -33,6 +33,7 @@
     background: rgba(252, 252, 252);
     justify-content: space-between;
     align-items: center;
+    border-radius: 16px;
   }
   &-bottom{
     padding: 16px 24px;
@@ -59,6 +60,7 @@
     box-shadow: -2px 4px 20px 0 rgba(25, 25, 25, 0.03);
     background: rgba(249, 249, 249);
     position: absolute;
+    border-radius: 16px;
   }
   &-date{
     font-size: 18px;
@@ -104,7 +106,6 @@
     font-size: 18px;
     line-height: 135%;
     font-weight: 400;
-    cursor: pointer;
   }
 }
 

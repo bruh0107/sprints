@@ -16,10 +16,52 @@
   &-form{
     display: flex;
     flex-direction: column;
+    gap: 40px;
 
     &__input{
       display: flex;
       flex-direction: column;
+      gap: 16px;
+
+      &-field, &-textarea{
+        padding: 16px;
+        border: none;
+        background: rgba(242, 242, 242);
+        border-radius: 16px;
+        font-size: 18px;
+        line-height: 135%;
+        font-family: "VisueltPro-Regular", sans-serif;
+        color: $main-grey;
+      }
+    }
+
+    &__sending{
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      .user-agreement{
+        font-size: 12px;
+        line-height: 135%;
+        color: $main-grey;
+        font-family: "VisueltPro-Regular", sans-serif;
+
+        &__blue{
+          color: $hover-blue;
+        }
+      }
+    }
+    &__button{
+      padding: 16px 24px;
+      border: none;
+      background: $color-blue;
+      border-radius: 16px;
+      font-size: 18px;
+      line-height: 135%;
+      font-family: "VisueltPro-Medium", sans-serif;
+      font-weight: 400;
+      text-wrap: nowrap;
+      color: $main-white;
     }
   }
 

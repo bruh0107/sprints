@@ -1,0 +1,45 @@
+.feedback{
+  padding: 80px 0;
+
+  &-inner{
+    display: flex;
+    gap: 163px;
+  }
+
+  &-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 465px;
+  }
+
+  &-form{
+    display: flex;
+    flex-direction: column;
+
+    &__input{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &-title{
+    font-size: 36px;
+    line-height: 112%;
+    color: $main-black;
+    font-family: "VisueltPro-Medium", sans-serif;
+    font-weight: 400;
+  }
+  &-description{
+    font-family: "VisueltPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 135%;
+    color: $main-grey;
+  }
+
+}

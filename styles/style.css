@@ -525,6 +525,98 @@ body {
   font-weight: 400;
 }
 
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 0;
+  background: radial-gradient(circle at 110% -10%, rgba(235, 71, 139, 0.3) 10%, rgba(134, 51, 176, 0.2) 25%, transparent 40%), radial-gradient(circle at -5% 130%, rgba(134, 51, 176, 0.3) 10%, rgba(71, 84, 235, 0.2) 25%, transparent 45%);
+}
+.faq > .container:last-child {
+  max-width: 1344px;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.faq-title {
+  font-size: 36px;
+  line-height: 112%;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
+  color: #1a1a1a;
+}
+.faq-action {
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.45);
+}
+.faq .question {
+  font-size: 36px;
+  line-height: 112%;
+  color: #1a1a1a;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
+}
+.faq .question-description {
+  font-size: 18px;
+  line-height: 135%;
+  color: #808080;
+  font-family: "VisueltPro-Regular", sans-serif;
+  padding: 16px 48px 24px 24px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.faq-block__open, .faq-block__close {
+  border-radius: 16px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  backdrop-filter: blur(240px);
+  box-shadow: -2px 4px 20px 0 rgba(25, 25, 25, 0.03);
+}
+
+.feedback {
+  padding: 80px 0;
+}
+.feedback-inner {
+  display: flex;
+  gap: 163px;
+}
+.feedback-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 465px;
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-form__input {
+  display: flex;
+  flex-direction: column;
+}
+.feedback-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.feedback-title {
+  font-size: 36px;
+  line-height: 112%;
+  color: #1a1a1a;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
+}
+.feedback-description {
+  font-family: "VisueltPro-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 135%;
+  color: #808080;
+}
+
 body {
   padding: 24px;
   background: #f2f2f2;

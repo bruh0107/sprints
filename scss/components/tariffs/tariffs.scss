@@ -12,7 +12,7 @@
     font-weight: 400;
   }
   & > .container:last-child{
-    max-width: 1344px;
+    max-width: 1364px;
   }
   &-list{
     display: grid;
@@ -55,9 +55,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    align-items: center;
     list-style-type: none;
-    padding: 24px 22px;
 
     &__item{
       display: flex;
@@ -70,6 +68,12 @@
         color: $main-grey;
         font-family: "VisueltPro-Regular", sans-serif;
       }
+    }
+    &-inner{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px 22px;
     }
   }
   &-button{

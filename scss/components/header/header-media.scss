@@ -6,6 +6,10 @@
       display: none;
     }
 
+    & > .container{
+      padding: 0 56px;
+    }
+
     .burger-menu{
       display: block;
     }
@@ -28,22 +32,22 @@
     &-button{
       display: none;
     }
+    & > .container{
+      padding: 0 20px;
+    }
     .profile{
       display: block;
+    }
+    &-block{
+      padding: 12px 0;
     }
   }
 }
 
 @include phone{
-
   .header{
-
     &-logo{
       font-size: 14px;
-    }
-
-    &-block{
-
     }
   }
 }

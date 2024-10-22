@@ -17,6 +17,9 @@
     gap: 24px;
     align-items: center;
   }
+  &-image{
+    width: 100%;
+  }
   &-info{
     display: flex;
     flex-direction: column;

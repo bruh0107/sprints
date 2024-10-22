@@ -1,0 +1,70 @@
+@include small-desktop{
+  .work{
+    &-scroll{
+      &_blue, &_white{
+        text-align: center;
+      }
+    }
+  }
+}
+@include tablet{
+  .work{
+    background: radial-gradient(circle at 80% 55%, rgba(134, 51, 176, 0.3) 5%, rgba(71, 84, 235, 0.3) 25%, transparent 55%),
+                radial-gradient(circle at 20% 110%, rgba(235, 71, 135, 0.2) 10%, transparent 30%);
+
+    & > .container{
+      padding: 0 56px;
+    }
+    &-block{
+      grid-template-columns: 1fr;
+    }
+    &-info{
+      &__description-block{
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+@include small-tablet{
+  .work{
+    background: radial-gradient(circle at 115% 55%, rgba(134, 51, 176, 0.2) 5%, rgba(71, 84, 235, 0.2) 25%, transparent 55%),
+                radial-gradient(circle at 20% 40%, rgba(235, 71, 135, 0.17) 10%, transparent 50%);
+    & > .container{
+      padding: 0;
+    }
+    &-inner{
+      padding: 39px 0;
+    }
+    &-image{
+      padding: 0 8px;
+    }
+    &-title, &-info{
+      padding: 0 20px;
+    }
+    &-title{
+      font-size: 18px;
+    }
+    &-scroll{
+      gap: 8px;
+      &_blue, &_white{
+        font-size: 13px;
+        font-family: "VisueltPro-Regular", sans-serif;
+      }
+      &__line{
+        width: 16px;
+      }
+    }
+    &-info{
+      &__title{
+        font-size: 26px;
+      }
+      &__under-title, &__description{
+        font-size: 14px;
+      }
+      &__button{
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}

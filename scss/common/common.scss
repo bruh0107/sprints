@@ -10,13 +10,3 @@ body{
 button{
   cursor: pointer;
 }
-@include small-desktop{
-  .container{
-    padding: 0 56px;
-  }
-}
-@include small-tablet{
-  .container{
-    padding: 0 20px;
-  }
-}

@@ -1,0 +1,49 @@
+@include small-desktop{
+
+  .header{
+
+    &-navigation{
+      display: none;
+    }
+
+    .burger-menu{
+      display: block;
+    }
+
+    &-logo{
+      &-inner{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+      }
+    }
+    .switch-language{
+      display: none;
+    }
+  }
+}
+
+@include small-tablet{
+  .header{
+    &-button{
+      display: none;
+    }
+    .profile{
+      display: block;
+    }
+  }
+}
+
+@include phone{
+
+  .header{
+
+    &-logo{
+      font-size: 14px;
+    }
+
+    &-block{
+
+    }
+  }
+}

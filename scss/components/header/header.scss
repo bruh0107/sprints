@@ -6,6 +6,10 @@
     font-size: 18px;
   }
 
+  .burger-menu{
+    display: none;
+  }
+
   &-block{
     display: flex;
     height: fit-content;
@@ -17,6 +21,9 @@
     display: flex;
     gap: 95px;
     align-items: center;
+  }
+  .profile{
+    display: none;
   }
 
   &-interaction{

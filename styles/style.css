@@ -30,7 +30,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1300px;
+  padding: 0 10px;
   width: 100%;
 }
 
@@ -38,10 +39,23 @@ button {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1050px) {
+  .container {
+    padding: 0 56px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px;
+  }
+}
 .header-logo {
   color: rgb(71, 84, 235);
   font-family: "VisueltPro-Medium", sans-serif;
   font-size: 18px;
+}
+.header .burger-menu {
+  display: none;
 }
 .header-block {
   display: flex;
@@ -54,6 +68,9 @@ button {
   display: flex;
   gap: 95px;
   align-items: center;
+}
+.header .profile {
+  display: none;
 }
 .header-interaction {
   display: flex;
@@ -83,18 +100,48 @@ button {
   font-family: "VisueltPro-Medium", sans-serif;
 }
 
+@media screen and (max-width: 1050px) {
+  .header-navigation {
+    display: none;
+  }
+  .header .burger-menu {
+    display: block;
+  }
+  .header-logo-inner {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .header .switch-language {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-button {
+    display: none;
+  }
+  .header .profile {
+    display: block;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header-logo {
+    font-size: 14px;
+  }
+}
 .banner {
   background: radial-gradient(at -15% 95%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%), radial-gradient(circle at 60% 60%, rgba(71, 84, 235, 0.4) -30%, transparent 30%), radial-gradient(at 80% 120%, rgba(71, 84, 235, 0.3) -15%, #fff 35%);
+  min-height: 720px;
 }
 .banner-inner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
+  padding: 120px 0 80px 0;
 }
 .banner-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .banner-block .user-agreement {
   font-size: 12px;
@@ -121,13 +168,14 @@ button {
   color: #1a1a1a;
   line-height: 1.25;
   margin-bottom: 40px;
+  max-width: 628px;
 }
 .banner-form {
   display: flex;
   padding: 8px 8px 8px 16px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 16px;
-  justify-content: space-between;
+  max-width: fit-content;
   align-items: center;
   margin-bottom: 16px;
 }
@@ -145,7 +193,27 @@ button {
   font-family: "VisueltPro-Medium", sans-serif;
   font-size: 18px;
 }
+.banner-img {
+  width: 100%;
+}
 
+@media screen and (max-width: 1050px) {
+  .banner {
+    background: radial-gradient(at -5% 45%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%), radial-gradient(at 20% 90%, rgba(71, 84, 235, 0.3) -15%, #fff 35%);
+  }
+  .banner-inner {
+    grid-template-columns: 1fr;
+    padding: 40px 0;
+  }
+  .banner-interaction {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner-title {
+    font-size: 40px;
+  }
+}
 .advantages {
   padding: 79px 0;
   display: flex;
@@ -357,7 +425,6 @@ button {
   line-height: 135%;
   border: none;
   border-radius: 16px;
-  cursor: pointer;
 }
 
 .reviews {
@@ -467,7 +534,6 @@ button {
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
-  cursor: pointer;
 }
 
 .sale-info {

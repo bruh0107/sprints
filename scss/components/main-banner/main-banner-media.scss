@@ -1,0 +1,22 @@
+@include small-desktop{
+  .banner{
+    background: radial-gradient(at -5% 45%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%),
+                radial-gradient(at 20% 90%, rgba(71, 84, 235, 0.3) -15%, #fff 35%);
+
+    &-inner{
+      grid-template-columns: 1fr;
+      padding: 40px 0;
+    }
+    &-interaction{
+      display: none;
+    }
+  }
+}
+@include small-tablet{
+  .banner{
+
+    &-title{
+      font-size: 40px;
+    }
+  }
+}

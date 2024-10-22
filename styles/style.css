@@ -409,6 +409,9 @@ button {
   .work-scroll_blue, .work-scroll_white {
     text-align: center;
   }
+  .work-info {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   .work {

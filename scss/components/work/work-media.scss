@@ -5,6 +5,9 @@
         text-align: center;
       }
     }
+    &-info{
+      max-width: 100%;
+    }
   }
 }
 @include tablet{

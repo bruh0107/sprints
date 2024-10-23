@@ -306,7 +306,7 @@
                         <article class="reviews-block">
                             <div class="reviews-top">
                                 <div class="reviews-profile">
-                                    <img src="images/profile-picture-1.svg" alt="Profile photo">
+                                    <img class="reviews-profile__photo" src="images/profile-picture-1.svg" alt="Profile photo">
                                     <p class="reviews-profile__name">Кот Олежка</p>
                                 </div>
                                 <p class="reviews-date">03.06.2021</p>
@@ -316,13 +316,13 @@
                                     Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id.
                                     Congue arcu turpis est, aliquet porttitor.
                                     Congue arcu turpis est, aliquet porttitor.</p>
-                                <img src="images/grade-5-stars.svg" alt="Five stars">
+                                <img class="reviews-grade" src="images/grade-5-stars.svg" alt="Five stars">
                             </div>
                         </article>
                         <article class="reviews-block">
                             <div class="reviews-top">
                                 <div class="reviews-profile">
-                                    <img src="images/profile-picture-2.svg" alt="Profile photo">
+                                    <img class="reviews-profile__photo" src="images/profile-picture-2.svg" alt="Profile photo">
                                     <p class="reviews-profile__name">Кот Серега</p>
                                 </div>
                                 <p class="reviews-date">03.06.2021</p>
@@ -332,13 +332,13 @@
                                     Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id.
                                     Congue arcu turpis est, aliquet porttitor.
                                     Congue arcu turpis est, aliquet porttitor.</p>
-                                <img src="images/grade-3-stars.svg" alt="Five stars">
+                                <img class="reviews-grade" src="images/grade-3-stars.svg" alt="Five stars">
                             </div>
                         </article>
                         <article class="reviews-block">
                             <div class="reviews-top">
                                 <div class="reviews-profile">
-                                    <img src="images/profile-picture-3.svg" alt="Profile photo">
+                                    <img class="reviews-profile__photo" src="images/profile-picture-3.svg" alt="Profile photo">
                                     <p class="reviews-profile__name">Кот Семен</p>
                                 </div>
                                 <p class="reviews-date">03.06.2021</p>
@@ -348,13 +348,13 @@
                                     Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id.
                                     Congue arcu turpis est, aliquet porttitor.
                                     Congue arcu turpis est, aliquet porttitor.</p>
-                                <img src="images/grade-5-stars.svg" alt="Five stars">
+                                <img class="reviews-grade" src="images/grade-5-stars.svg" alt="Five stars">
                             </div>
                         </article>
                         <article class="reviews-block">
                             <div class="reviews-top">
                                 <div class="reviews-profile">
-                                    <img src="images/profile-picture-4.svg" alt="Profile photo">
+                                    <img class="reviews-profile__photo" src="images/profile-picture-4.svg" alt="Profile photo">
                                     <p class="reviews-profile__name">Кот Инокентий</p>
                                 </div>
                                 <p class="reviews-date">03.06.2021</p>
@@ -364,132 +364,131 @@
                                     Malesuada gravida nisi sit felis odio. Sociis et pellentesque sed id.
                                     Congue arcu turpis est, aliquet porttitor.
                                     Congue arcu turpis est, aliquet porttitor.</p>
-                                <img src="images/grade-4-stars.svg" alt="Five stars">
+                                <img class="reviews-grade" src="images/grade-4-stars.svg" alt="Five stars">
                             </div>
                         </article>
                         <button class="reviews-button">Структурировать котиков</button>
                     </div>
+                    <p class="reviews-structured">Котики структурированы!</p>
                 </div>
             </div>
         </section>
-<!--        <section class="sale">-->
-<!--            <div class="container">-->
-<!--                <article class="sale-inner">-->
-<!--                    <div class="sale-img">-->
-<!--                        <img src="images/sale-image.png" alt="Sale image">-->
-<!--                    </div>-->
-<!--                    <div class="sale-info">-->
-<!--                        <h2 class="sale-title">Получите самую выгодную цену <br>на планете</h2>-->
-<!--                        <div class="sale-form">-->
-<!--                            <div class="sale-form__email">-->
-<!--                                <input type="email" class="sale-form__input" placeholder="Введите свой e-mail">-->
-<!--                                <button class="sale-form__button">Отправить</button>-->
-<!--                            </div>-->
-<!--                            <div class="sale-form__agreement">-->
-<!--                                <p class="sale-form__agreement-text">-->
-<!--                                    Нажимая на кнопку вы соглашаетесь на обработку <br>-->
-<!--                                    <span class="sale-form__agreement-blue">персональных данных</span>-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </article>-->
-<!--            </div>-->
-<!--        </section>-->
-<!--        <section class="faq">-->
-<!--            <div class="container">-->
-<!--                <h2 class="faq-title">Часто задаваемые вопросы</h2>-->
-<!--            </div>-->
-<!--            <div class="container">-->
-<!--                <div class="faq-list">-->
-<!--                    <article class="faq-block__open">-->
-<!--                        <div class="faq-action">-->
-<!--                            <h2 class="question">Первый вопрос</h2>-->
-<!--                            <img class="close" src="images/close.svg" alt="Закрыть">-->
-<!--                        </div>-->
-<!--                        <p class="question-description">-->
-<!--                            Lorem ipsum dolor sit amet,-->
-<!--                            consectetur adipiscing elit.-->
-<!--                            Massa mi aliquet eu interdum eu pellentesque amet,-->
-<!--                            fermentum hendrerit. Nunc hendrerit nec risus-->
-<!--                            adipiscing lacus, lobortis lectus cursus nunc.-->
-<!--                            Id pellentesque dapibus eu tincidunt dui id tortor,-->
-<!--                            porttitor. Tincidunt nunc praesent euismod in nisl,-->
-<!--                            tellus suspendisse morbi nam. Egestas eget erat malesuada-->
-<!--                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.-->
-<!--                        </p>-->
-<!--                    </article>-->
-<!--                    <article class="faq-block__close">-->
-<!--                        <div class="faq-action">-->
-<!--                            <h2 class="question">Второй вопрос</h2>-->
-<!--                            <img src="images/open.svg" alt="Открыть">-->
-<!--                        </div>-->
-<!--                    </article>-->
-<!--                    <article class="faq-block__close">-->
-<!--                        <div class="faq-action">-->
-<!--                            <h2 class="question">Третий вопрос</h2>-->
-<!--                            <img src="images/open.svg" alt="Открыть">-->
-<!--                        </div>-->
-<!--                    </article>-->
-<!--                    <article class="faq-block__close">-->
-<!--                        <div class="faq-action">-->
-<!--                            <h2 class="question">Четвертый вопрос</h2>-->
-<!--                            <img src="images/open.svg" alt="Открыть">-->
-<!--                        </div>-->
-<!--                    </article>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-<!--        <section class="feedback">-->
-<!--            <div class="container">-->
-<!--                <div class="feedback-inner">-->
-<!--                    <div class="feedback-content">-->
-<!--                        <div class="feedback-text">-->
-<!--                            <h2 class="feedback-title">Обратная связь</h2>-->
-<!--                            <p class="feedback-description">-->
-<!--                                Поговорите с одним из наших сотрудников,-->
-<!--                                чтобы узнать, сколько мы можем получить для вас-->
-<!--                                целевой аудитории за месяц с минимальными усилиями с вашей стороны-->
-<!--                            </p>-->
-<!--                        </div>-->
-<!--                        <form class="feedback-form">-->
-<!--                            <div class="feedback-form__input">-->
-<!--                                <input class="feedback-form__input-field" type="email" placeholder="Введите свой e-mail">-->
-<!--                                <input class="feedback-form__input-field" type="tel" placeholder="Номер мобильного телефона">-->
-<!--                                <input class="feedback-form__input-field" type="text" placeholder="Никнейм в Instagram">-->
-<!--                                <textarea class="feedback-form__input-field" rows="2"-->
-<!--                                          placeholder="Что вы бы хотели спросить о росте в Instagram"></textarea>-->
-<!--                            </div>-->
-<!--                            <div class="feedback-form__sending">-->
-<!--                                <button class="feedback-form__button">Отправить заявку</button>-->
-<!--                                <p class="user-agreement">-->
-<!--                                    Нажимая на кнопку вы соглашаетесь на обработку-->
-<!--                                    <span class="user-agreement__blue">персональных данных</span></p>-->
-<!--                            </div>-->
-<!--                        </form>-->
-<!--                    </div>-->
-<!--                    <div class="feedback-image">-->
-<!--                        <img src="images/feedback-pic.png" alt="Feedback photo">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
+        <section class="sale">
+            <div class="container">
+                <article class="sale-inner">
+                    <img class="sale-img" src="images/sale-image.png" alt="Sale image">
+                    <div class="sale-info">
+                        <h2 class="sale-title">Получите самую выгодную цену <br>на планете</h2>
+                        <div class="sale-form">
+                            <div class="sale-form__email">
+                                <input type="email" class="sale-form__input" placeholder="Введите свой e-mail">
+                                <button class="sale-form__button">Отправить</button>
+                            </div>
+                            <div class="sale-form__agreement">
+                                <p class="sale-form__agreement-text">
+                                    Нажимая на кнопку вы соглашаетесь на обработку <br>
+                                    <span class="sale-form__agreement-blue">персональных данных</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <h2 class="faq-title">Часто задаваемые вопросы</h2>
+            </div>
+            <div class="container">
+                <div class="faq-list">
+                    <article class="faq-block__open">
+                        <div class="faq-action">
+                            <h2 class="question">Первый вопрос</h2>
+                            <img class="close" src="images/close.svg" alt="Закрыть">
+                        </div>
+                        <p class="question-description">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Massa mi aliquet eu interdum eu pellentesque amet,
+                            fermentum hendrerit. Nunc hendrerit nec risus
+                            adipiscing lacus, lobortis lectus cursus nunc.
+                            Id pellentesque dapibus eu tincidunt dui id tortor,
+                            porttitor. Tincidunt nunc praesent euismod in nisl,
+                            tellus suspendisse morbi nam. Egestas eget erat malesuada
+                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
+                        </p>
+                    </article>
+                    <article class="faq-block__close">
+                        <div class="faq-action">
+                            <h2 class="question">Второй вопрос</h2>
+                            <img src="images/open.svg" alt="Открыть">
+                        </div>
+                    </article>
+                    <article class="faq-block__close">
+                        <div class="faq-action">
+                            <h2 class="question">Третий вопрос</h2>
+                            <img src="images/open.svg" alt="Открыть">
+                        </div>
+                    </article>
+                    <article class="faq-block__close">
+                        <div class="faq-action">
+                            <h2 class="question">Четвертый вопрос</h2>
+                            <img src="images/open.svg" alt="Открыть">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback-inner">
+                    <div class="feedback-content">
+                        <div class="feedback-text">
+                            <h2 class="feedback-title">Обратная связь</h2>
+                            <p class="feedback-description">
+                                Поговорите с одним из наших сотрудников,
+                                чтобы узнать, сколько мы можем получить для вас
+                                целевой аудитории за месяц с минимальными усилиями с вашей стороны
+                            </p>
+                        </div>
+                        <form class="feedback-form">
+                            <div class="feedback-form__input">
+                                <input class="feedback-form__input-field" type="email" placeholder="Введите свой e-mail">
+                                <input class="feedback-form__input-field" type="tel" placeholder="Номер мобильного телефона">
+                                <input class="feedback-form__input-field" type="text" placeholder="Никнейм в Instagram">
+                                <textarea class="feedback-form__input-field" rows="2"
+                                          placeholder="Что вы бы хотели спросить о росте в Instagram"></textarea>
+                            </div>
+                            <div class="feedback-form__sending">
+                                <button class="feedback-form__button">Отправить заявку</button>
+                                <p class="user-agreement">
+                                    Нажимая на кнопку вы соглашаетесь на обработку
+                                    <span class="user-agreement__blue">персональных данных</span></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="feedback-image">
+                        <img src="images/feedback-pic.png" alt="Feedback photo">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-<!--    <footer class="footer">-->
-<!--        <div class="container">-->
-<!--            <div class="footer-block">-->
-<!--                <div class="footer-info">-->
-<!--                    <h2 class="footer-logo">Инстаботы</h2>-->
-<!--                    <p class="footer-copyright">&copy; 2021 Copyright reserved<br>-->
-<!--                        Instabots</p>-->
-<!--                </div>-->
-<!--                <a href="#" class="scroll">-->
-<!--                    <span class="scroll-text">Вернуться наверх</span>-->
-<!--                    <img src="images/scroll-arrow.svg" alt="scroll arrow">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </footer>-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer-info">
+                    <h2 class="footer-logo">Инстаботы</h2>
+                    <p class="footer-copyright">&copy; 2021 Copyright reserved<br>
+                        Instabots</p>
+                </div>
+                <a href="#" class="scroll">
+                    <span class="scroll-text"><span class="scroll-text__comeback">Вернуться</span> наверх</span>
+                    <img src="images/scroll-arrow.svg" alt="scroll arrow">
+                </a>
+            </div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

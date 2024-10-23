@@ -1,0 +1,88 @@
+@include desktop{
+  .reviews{
+
+    &-inner{
+      gap: 40px;
+    }
+    &-title{
+      padding-left: 46px;
+    }
+    &-list{
+      position: static;
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      gap: 24px;
+    }
+    &-block{
+      position: static;
+    }
+    &-button{
+      display: none;
+    }
+    &-structured{
+      display: block;
+      text-align: center;
+      font-size: 24px;
+      color: $main-grey;
+      font-family: "VisueltPro-Regular", sans-serif;
+    }
+  }
+}
+@include tablet{
+  .reviews {
+    background: radial-gradient(circle at 130% 5%, rgba(134, 51, 176, 0.3) 13%, transparent 35%),
+                radial-gradient(at 85% 130%, rgba(235, 71, 139, 0.3) 5%, rgba(151, 49, 135, 0.3), transparent 35%);
+    & > .container{
+      padding: 0 24px;
+    }
+    &-title{
+      padding-left: 32px;
+    }
+    &-list {
+      grid-template-columns: 1fr;
+      align-self: center;
+    }
+    &-structured {
+      display: none;
+    }
+  }
+}
+@include small-tablet{
+  .reviews{
+    background: radial-gradient(circle at 150% -15%, rgba(112, 71, 235, 0.3) 18%, transparent 35%),
+                radial-gradient(circle at 200% 110%, rgba(235, 71, 139, 0.3) 5%, rgba(151, 49, 135, 0.3) 15%, transparent 45%);
+
+    padding: 40px 0;
+    &-title{
+      font-size: 18px;
+      padding-left: 12px;
+    }
+    &-top{
+      padding: 12px 16px;
+    }
+    &-grade{
+      width: 96px;
+    }
+    & > .container{
+      padding: 0 8px;
+    }
+
+    &-profile{
+      &__name{
+        font-size: 18px;
+      }
+      &__photo{
+        width: 48px;
+      }
+    }
+    &-date{
+      font-size: 14px;
+    }
+    &-text{
+      font-size: 14px;
+    }
+    &-block:nth-child(4){
+      background: rgba(249, 249, 249, 0.2);
+    }
+  }
+}

@@ -4,13 +4,13 @@
   &-inner{
     display: flex;
     gap: 163px;
+    align-items: center;
   }
 
   &-content{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 465px;
   }
 
   &-form{
@@ -82,6 +82,11 @@
     font-size: 18px;
     line-height: 135%;
     color: $main-grey;
+  }
+  &-image{
+    & > img{
+      max-width: 100%;
+    }
   }
 
 }

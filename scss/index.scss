@@ -20,3 +20,8 @@ body{
     overflow: hidden;
   }
 }
+@include phone{
+  body{
+    padding: 8px;
+  }
+}

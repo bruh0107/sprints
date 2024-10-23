@@ -26,6 +26,7 @@ a, a:link, a:visited {
 }
 body {
   font-family: "VisueltPro-Regular", sans-serif;
+  transition: 0.3s;
 }
 
 .container {

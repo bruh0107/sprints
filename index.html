@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Задание №1, Инстаботы</title>
+    <script defer src="scripts/script.js"></script>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -14,7 +15,8 @@
         <div class="container">
             <div class="header-block">
                 <div class="header-logo-inner">
-                    <img class="burger-menu" src="images/burger-menu.svg" alt="burger menu">
+                    <img class="burger-icon" src="images/burger-menu.svg" alt="burger menu" onclick="toggleModal()">
+                    <img class="burger-icon" src="images/close-menu.svg" alt="burger menu">
                     <span class="header-logo">Инстаботы</span>
                 </div>
                 <div class="header-inner">
@@ -31,9 +33,26 @@
                             <span>/</span>
                             <span>En</span>
                         </div>
-                        <button class="header-button">Вход и регистрация</button>
+                        <button class="header-button backlight">Вход и регистрация</button>
                         <img class="profile" src="images/profile-icon.svg" alt="Profile icon">
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu">
+            <div class="burger-inner">
+                <h2 class="burger-name">Меню</h2>
+                <nav class="burger-menu-navigation">
+                    <a href="#">О компании</a>
+                    <a href="#">Тарифы</a>
+                    <a href="#">Отзывы</a>
+                    <a href="#">Q&A</a>
+                    <a href="#">Обратная связь</a>
+                </nav>
+                <div class="burger-menu__switch-language">
+                    <span>Ru</span>
+                    <span>/</span>
+                    <span>En</span>
                 </div>
             </div>
         </div>
@@ -46,7 +65,7 @@
                         <h1 class="banner-title">Высокий уровень вовлечения представителей</h1>
                         <div class="banner-form">
                             <input class="banner-input" type="email" placeholder="Введите свой e-mail">
-                            <button class="banner-button">Отправить</button>
+                            <button class="banner-button backlight">Отправить</button>
                         </div>
                         <p class="user-agreement">
                             Нажимая на кнопку вы соглашаетесь на обработку<br>
@@ -143,7 +162,7 @@
                                     pretium adipiscing augue sit nisl adipiscing.
                                 </p>
                             </div>
-                            <button class="work-info__button">Забронировать звонок</button>
+                            <button class="work-info__button backlight">Забронировать звонок</button>
                         </div>
                     </article>
                 </div>
@@ -187,7 +206,7 @@
                                         Malesuada gravida nisi sit felis odio.</p>
                                 </li>
                             </ul>
-                            <button class="tariffs-button">Узнать подробнее</button>
+                            <button class="tariffs-button backlight">Узнать подробнее</button>
                         </div>
                     </article>
                     <article class="tariffs-block">
@@ -222,7 +241,7 @@
                                         Malesuada gravida nisi sit felis odio.</p>
                                 </li>
                             </ul>
-                            <button class="tariffs-button">Узнать подробнее</button>
+                            <button class="tariffs-button backlight">Узнать подробнее</button>
                         </div>
                     </article>
                     <article class="tariffs-block">
@@ -257,7 +276,7 @@
                                         Malesuada gravida nisi sit felis odio.</p>
                                 </li>
                             </ul>
-                            <button class="tariffs-button">Узнать подробнее</button>
+                            <button class="tariffs-button backlight">Узнать подробнее</button>
                         </div>
                     </article>
                     <article class="tariffs-block">
@@ -292,7 +311,7 @@
                                         Malesuada gravida nisi sit felis odio.</p>
                                 </li>
                             </ul>
-                            <button class="tariffs-button">Узнать подробнее</button>
+                            <button class="tariffs-button backlight">Узнать подробнее</button>
                         </div>
                     </article>
                 </div>
@@ -367,7 +386,7 @@
                                 <img class="reviews-grade" src="images/grade-4-stars.svg" alt="Five stars">
                             </div>
                         </article>
-                        <button class="reviews-button">Структурировать котиков</button>
+                        <button class="reviews-button backlight">Структурировать котиков</button>
                     </div>
                     <p class="reviews-structured">Котики структурированы!</p>
                 </div>
@@ -382,7 +401,7 @@
                         <div class="sale-form">
                             <div class="sale-form__email">
                                 <input type="email" class="sale-form__input" placeholder="Введите свой e-mail">
-                                <button class="sale-form__button">Отправить</button>
+                                <button class="sale-form__button backlight">Отправить</button>
                             </div>
                             <div class="sale-form__agreement">
                                 <p class="sale-form__agreement-text">
@@ -460,7 +479,7 @@
                                           placeholder="Что вы бы хотели спросить о росте в Instagram"></textarea>
                             </div>
                             <div class="feedback-form__sending">
-                                <button class="feedback-form__button">Отправить заявку</button>
+                                <button class="feedback-form__button backlight">Отправить заявку</button>
                                 <p class="user-agreement">
                                     Нажимая на кнопку вы соглашаетесь на обработку
                                     <span class="user-agreement__blue">персональных данных</span></p>

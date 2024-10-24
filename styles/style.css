@@ -14,6 +14,7 @@
 
 a, a:link, a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 @font-face {
@@ -24,6 +25,10 @@ a, a:link, a:visited {
   src: url("../../fonts/VisueltPro-Medium.ttf");
   font-family: "VisueltPro-Medium";
 }
+.backlight:hover {
+  box-shadow: 0 24px 24px 0 rgba(80, 93, 236, 0.25);
+}
+
 body {
   font-family: "VisueltPro-Regular", sans-serif;
   transition: 0.3s;
@@ -38,6 +43,7 @@ body {
 
 button {
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .header-logo {
@@ -45,7 +51,7 @@ button {
   font-family: "VisueltPro-Medium", sans-serif;
   font-size: 18px;
 }
-.header .burger-menu {
+.header .burger-icon {
   display: none;
 }
 .header-block {
@@ -92,14 +98,20 @@ button {
 }
 
 @media screen and (max-width: 1050px) {
+  .header {
+    position: relative;
+  }
   .header-navigation {
     display: none;
   }
   .header > .container {
     padding: 0 56px;
   }
-  .header .burger-menu {
+  .header .burger-icon {
     display: block;
+  }
+  .header .burger-icon:nth-child(2) {
+    display: none;
   }
   .header-logo-inner {
     display: flex;
@@ -129,6 +141,35 @@ button {
     font-size: 14px;
   }
 }
+.burger-name {
+  font-size: 24px;
+  color: #808080;
+  margin-bottom: 40px;
+}
+.burger-inner {
+  padding: 80px 56px;
+}
+.burger-menu {
+  display: none;
+}
+.burger-menu-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 156px;
+}
+.burger-menu-navigation > a {
+  color: #1a1a1a;
+  font-size: 56px;
+  font-family: "VisueltPro-Regular", sans-serif;
+}
+.burger-menu-navigation > a:first-child {
+  color: rgb(71, 84, 235);
+}
+.burger-menu-navigation__switch-language {
+  font-size: 56px;
+}
+
 .banner {
   background: radial-gradient(at -15% 95%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%), radial-gradient(circle at 60% 60%, rgba(71, 84, 235, 0.4) -30%, transparent 30%), radial-gradient(at 80% 120%, rgba(71, 84, 235, 0.3) -15%, #fff 35%);
 }
@@ -991,6 +1032,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 465px;
 }
 .feedback-form {
   display: flex;
@@ -1003,6 +1045,7 @@ button {
   gap: 16px;
 }
 .feedback-form__input-field, .feedback-form__input-textarea {
+  resize: none;
   padding: 16px;
   border: none;
   background: rgb(242, 242, 242);
@@ -1022,6 +1065,7 @@ button {
   line-height: 135%;
   color: #808080;
   font-family: "VisueltPro-Regular", sans-serif;
+  max-width: 283px;
 }
 .feedback-form__sending .user-agreement__blue {
   color: #505dec;

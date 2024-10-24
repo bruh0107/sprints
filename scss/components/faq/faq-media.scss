@@ -1,0 +1,49 @@
+@include small-desktop{
+  .faq{
+    & > .container:first-child{
+      padding: 0 56px;
+    }
+    & > .container:last-child{
+      padding: 0 25px;
+    }
+    &-title{
+      font-size: 36px;
+    }
+  }
+}
+@include tablet{
+  .faq{
+    background: radial-gradient(circle at 110% -10%, rgba(235, 71, 139, 0.3) 10%, rgba(134, 51, 176, 0.1) 25%, transparent 40%),
+                radial-gradient(circle at 10% 90%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.2) 25%, transparent 45%);
+
+  }
+}
+@include small-tablet{
+  .faq{
+    padding: 40px 0;
+    & > .container:first-child{
+      padding: 0 20px;
+    }
+    & > .container:last-child{
+      padding: 0 8px;
+    }
+    &-title{
+      font-size: 18px;
+    }
+    &-action{
+      padding: 24px 16px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .question{
+      font-size: 26px;
+
+      &-description{
+        font-size: 14px;
+        padding: 16px 24px 24px;
+      }
+    }
+    .close{
+      width: 32px;
+    }
+  }
+}

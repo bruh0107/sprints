@@ -20,7 +20,7 @@ body{
     overflow: hidden;
   }
 }
-@include phone{
+@include small-tablet{
   body{
     padding: 8px;
   }

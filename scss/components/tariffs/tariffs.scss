@@ -1,0 +1,89 @@
+.tariffs{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 0;
+
+  &-title{
+    font-size: 36px;
+    line-height: 112%;
+    color: $main-black;
+    font-family: "VisueltPro-Medium", sans-serif;
+    font-weight: 400;
+  }
+  & > .container:last-child{
+    max-width: 1364px;
+  }
+  &-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+  &-block{
+    backdrop-filter: blur(24px);
+    box-shadow: 0 4px 20px 0 rgba(25, 25, 25, 0.05);
+    background: rgba(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    border: 1px solid $main-white;
+    overflow: hidden;
+  }
+  &-rate{
+    background: rgba(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 24px;
+
+    &__level{
+      color: $main-black;
+      font-size: 24px;
+      font-family: "VisueltPro-Medium", sans-serif;
+    }
+    &__price{
+      color: $main-grey;
+      font-size: 24px;
+      font-family: "VisueltPro-Medium", sans-serif;
+
+      &-blue{
+        color: $color-blue;
+      }
+    }
+  }
+  &-points{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style-type: none;
+
+    &__item{
+      display: flex;
+      gap: 16px;
+      align-items: start;
+
+      &-description{
+        font-size: 18px;
+        line-height: 135%;
+        color: $main-grey;
+        font-family: "VisueltPro-Regular", sans-serif;
+      }
+    }
+    &-inner{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px 22px;
+    }
+  }
+  &-button{
+    padding: 16px 56px;
+    color: $color-blue;
+    background: $main-white;
+    font-family: "VisueltPro-Medium", sans-serif;
+    font-size: 18px;
+    line-height: 135%;
+    border: none;
+    border-radius: 16px;
+  }
+}

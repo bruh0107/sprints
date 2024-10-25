@@ -1,0 +1,42 @@
+@include small-desktop{
+  .tariffs{
+    gap: 48px;
+    & > .container:first-child{
+      padding: 0 56px;
+    }
+    &-list{
+      grid-template-columns: repeat(2, 2fr);
+    }
+  }
+}
+@include small-tablet{
+  .tariffs{
+    padding: 40px 0;
+    & > .container:first-child, & > .container:last-child{
+      padding: 0 20px;
+    }
+    &-title{
+      font-size: 18px;
+    }
+    &-list{
+      grid-template-columns: 1fr;
+    }
+    &-rate{
+      padding: 15px 16px;
+      &__level, &__price{
+        font-size: 18px;
+      }
+    }
+    &-points{
+      &__item-description{
+        font-size: 14px;
+      }
+      &-inner{
+        gap: 40px;
+      }
+    }
+    &-button{
+      font-size: 14px;
+    }
+  }
+}

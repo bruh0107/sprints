@@ -1,0 +1,95 @@
+.feedback{
+  padding: 80px 0;
+
+  &-inner{
+    display: flex;
+    gap: 163px;
+    align-items: center;
+  }
+
+  &-content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 465px;
+  }
+
+  &-form{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__input{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      &-field, &-textarea{
+        resize: none;
+        padding: 16px;
+        border: none;
+        background: rgba(242, 242, 242);
+        border-radius: 16px;
+        font-size: 18px;
+        line-height: 135%;
+        font-family: "VisueltPro-Regular", sans-serif;
+        color: $main-grey;
+      }
+    }
+
+    &__sending{
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      .user-agreement{
+        font-size: 12px;
+        line-height: 135%;
+        color: $main-grey;
+        font-family: "VisueltPro-Regular", sans-serif;
+        max-width: 283px;
+
+        &__blue{
+          color: $hover-blue;
+        }
+      }
+    }
+    &__button{
+      padding: 16px 24px;
+      border: none;
+      background: $color-blue;
+      border-radius: 16px;
+      font-size: 18px;
+      line-height: 135%;
+      font-family: "VisueltPro-Medium", sans-serif;
+      font-weight: 400;
+      text-wrap: nowrap;
+      color: $main-white;
+    }
+  }
+
+  &-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &-title{
+    font-size: 36px;
+    line-height: 112%;
+    color: $main-black;
+    font-family: "VisueltPro-Medium", sans-serif;
+    font-weight: 400;
+  }
+  &-description{
+    font-family: "VisueltPro-Regular", sans-serif;
+    font-size: 18px;
+    line-height: 135%;
+    color: $main-grey;
+  }
+  &-image{
+    & > img{
+      max-width: 100%;
+    }
+  }
+
+}

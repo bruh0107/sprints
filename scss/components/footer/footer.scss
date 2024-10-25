@@ -1,0 +1,40 @@
+.footer{
+  padding: 24px 0;
+  background: $color-blue;
+
+  &-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-logo{
+    font-size: 18px;
+    line-height: 135%;
+    font-family: "VisueltPro-Regular", sans-serif;
+    font-weight: 400;
+    color: $main-white;
+  }
+  &-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  &-copyright{
+    font-size: 16px;
+    line-height: 135%;
+    color: rgba(217, 217, 217);
+    font-family: "VisueltPro-Regular", sans-serif;
+  }
+  .scroll{
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+
+    &-text{
+      font-size: 18px;
+      line-height: 135%;
+      color: $main-white;
+      font-family: "VisueltPro-Regular", sans-serif;
+    }
+  }
+}

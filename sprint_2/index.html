@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>2 неделя</title>
+</head>
+<body id="body">
+    <main class="main">
+        <div class="p-3 mb-2 bg-info-subtle text-info-emphasis">
+            <div class="container">
+                <div class="form-inner">
+                    <h1 class="text-center">Динамический парсер JSON</h1>
+                    <form id="form-file-selector">
+                        <div class="input-group mb-3 mt-3">
+                            <label class="form-label fs-3" for="file-selector" id="label-file-selector">Загрузить файл JSON:</label>
+                            <input type="file" name="file" class="form-control w-100" id="file-selector" accept=".js" onchange="readFile(this)"/>
+                        </div>
+                    </form>
+                </div>
+                <div id="form" class="form" style="display: none">
+                    <h2 id="nameForm" class=""></h2>
+                    <form id="formCreate" class="py-3"></form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+</html>

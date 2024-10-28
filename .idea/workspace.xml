@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint_2/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/scripts/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint_2/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,8 @@
       <workItem from="1729857937517" duration="3746000" />
       <workItem from="1729873058814" duration="8623000" />
       <workItem from="1729885339958" duration="663000" />
-      <workItem from="1729953139666" duration="9158000" />
+      <workItem from="1729953139666" duration="9615000" />
+      <workItem from="1730125673333" duration="8492000" />
     </task>
     <task id="LOCAL-00001" summary="создание проекта">
       <option name="closed" value="true" />
@@ -234,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729885393674</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="сделала получение файла из формы">
+      <option name="closed" value="true" />
+      <created>1729971769740</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1729971769740</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,5 +274,17 @@
     <MESSAGE value="доделала адаптив" />
     <MESSAGE value="сделала получение файла из формы" />
     <option name="LAST_COMMIT_MESSAGE" value="сделала получение файла из формы" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/sprint_2/JSONs/signup.js</url>
+          <line>8</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

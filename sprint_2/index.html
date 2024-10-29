@@ -12,16 +12,19 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>2 неделя</title>
 </head>
-<body id="body">
+<body id="body" class="bg-info-subtle">
     <main class="main">
-        <div class="p-3 mb-2 bg-info-subtle text-info-emphasis">
+        <div class="p-3 mb-2 text-info-emphasis">
             <div class="container">
                 <div class="form-inner">
                     <h1 class="text-center">Динамический парсер JSON</h1>
                     <form id="form-file-selector">
-                        <div class="input-group mb-3 mt-3">
+                        <div class="input-group mb-3 mt-3 d-flex flex-column">
                             <label class="form-label fs-3" for="file-selector" id="label-file-selector">Загрузить файл JSON:</label>
-                            <input type="file" name="file" class="form-control w-100" id="file-selector" accept=".js" onchange="readFile(this)"/>
+                            <div class="d-flex gap-5">
+                                <input type="file" name="file" class="form-control w-100" id="file-selector" accept=".js" onchange="readFile(this)"/>
+                                <button id="btn" class="d-none btn btn-info text-white" onclick="resetForm()">Очистить</button>
+                            </div>
                         </div>
                     </form>
                 </div>

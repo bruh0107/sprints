@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae0fc9b6-73c7-4282-95de-2eb76ce50c47" name="Changes" comment="сделала получение файла из формы">
+    <list default="true" id="ae0fc9b6-73c7-4282-95de-2eb76ce50c47" name="Changes" comment="начала делать references">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint_2/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/scripts/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint_2/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,22 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;sprint2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/sprints/JSONs&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "Node.js.scripts.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "sprint2",
+    "last_opened_file_path": "C:/Users/Legion/Desktop/ucheba/пирвп/проверочная 2",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\sprints\JSONs" />
@@ -114,7 +114,9 @@
       <workItem from="1729873058814" duration="8623000" />
       <workItem from="1729885339958" duration="663000" />
       <workItem from="1729953139666" duration="9615000" />
-      <workItem from="1730125673333" duration="8492000" />
+      <workItem from="1730125673333" duration="8688000" />
+      <workItem from="1730204815721" duration="117000" />
+      <workItem from="1730211116678" duration="10050000" />
     </task>
     <task id="LOCAL-00001" summary="создание проекта">
       <option name="closed" value="true" />
@@ -244,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729971769740</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="начала делать references">
+      <option name="closed" value="true" />
+      <created>1730139626700</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1730139626700</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,18 +283,7 @@
     <MESSAGE value="сделала полный адаптив для блоков: &quot;наши преимущества&quot;, &quot;как мы работаем&quot;, &quot;наши тарифы&quot;" />
     <MESSAGE value="доделала адаптив" />
     <MESSAGE value="сделала получение файла из формы" />
-    <option name="LAST_COMMIT_MESSAGE" value="сделала получение файла из формы" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/sprint_2/JSONs/signup.js</url>
-          <line>8</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="начала делать references" />
+    <option name="LAST_COMMIT_MESSAGE" value="начала делать references" />
   </component>
 </project>

@@ -13,6 +13,7 @@ let createForm = (file) => {
     file.fields.forEach(item => {
         let div = document.createElement('div')
         div.classList.add('d-flex', 'flex-column')
+
         let input = document.createElement('input')
         input.classList.add('form-control')
         if(item.label){
@@ -21,7 +22,8 @@ let createForm = (file) => {
             div.append(label)
             label.classList.add('form-label')
         }
-        (item.input.required && item.input['required:']) ? input.setAttribute('required', item.input.required) : null
+        if(item.input.required && item.input['required:']) input.setAttribute('required', item.input.required)
+
         if(item.input.type === 'technology'){
             input = document.createElement('select')
             item.input.technologies.forEach(tech => {
@@ -29,6 +31,10 @@ let createForm = (file) => {
                 option.innerHTML = tech
                 input.append(option)
             })
+        }
+        if(item.input.type === 'textarea'){
+            input = document.createElement('textarea')
+            input.classList.add('form-control')
         }
         if(item.input.type === 'checkbox') input.classList.add('form-check-input')
 
@@ -51,12 +57,14 @@ let createForm = (file) => {
             })
             div.append(datalist)
         }
+
         if(item.input.filetype){
             let newFileType=  item.input.filetype.map(filetype => {
                 return '.' + filetype
             })
             input.setAttribute('accept', newFileType.join(', '))
         }
+
         div.append(input)
         form.append(div)
 

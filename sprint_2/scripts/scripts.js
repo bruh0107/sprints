@@ -26,6 +26,7 @@ let createForm = (file) => {
 
         if(item.input.type === 'technology'){
             input = document.createElement('select')
+            input.classList.add('form-select')
             item.input.technologies.forEach(tech => {
                 let option = document.createElement('option')
                 option.innerHTML = tech

@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ae0fc9b6-73c7-4282-95de-2eb76ce50c47" name="Changes" comment="доделала задание">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sprint_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sprint_2/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/scripts/scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
       <list>
         <option value="SCSS File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>

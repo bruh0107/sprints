@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae0fc9b6-73c7-4282-95de-2eb76ce50c47" name="Changes" comment="доделала задание">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sprint_2/scripts/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/sprint_2/scripts/scripts.js" afterDir="false" />
-    </list>
+    <list default="true" id="ae0fc9b6-73c7-4282-95de-2eb76ce50c47" name="Changes" comment="закончено" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -263,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730221446085</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="закончено">
+      <option name="closed" value="true" />
+      <created>1730357905776</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1730357905776</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +278,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/sprint2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -294,6 +310,7 @@
     <MESSAGE value="сделала получение файла из формы" />
     <MESSAGE value="начала делать references" />
     <MESSAGE value="доделала задание" />
-    <option name="LAST_COMMIT_MESSAGE" value="доделала задание" />
+    <MESSAGE value="закончено" />
+    <option name="LAST_COMMIT_MESSAGE" value="закончено" />
   </component>
 </project>

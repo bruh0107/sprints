@@ -14,7 +14,6 @@
 
 a, a:link, a:visited {
   text-decoration: none;
-  color: inherit;
 }
 
 @font-face {
@@ -150,7 +149,16 @@ button {
   padding: 80px 56px;
 }
 .burger-menu {
-  display: none;
+  position: absolute;
+  z-index: 10;
+  background: radial-gradient(circle at 10% 50%, rgba(134, 51, 176, 0.08) 25%, transparent 45%), radial-gradient(at 20% -90%, rgba(71, 84, 235, 0.05) 25%, transparent 45%), #fff;
+  translate: 0 -120%;
+  transition: 0.2s;
+  width: 100%;
+}
+.burger-menu._open {
+  display: block;
+  translate: 0;
 }
 .burger-menu-navigation {
   display: flex;
@@ -161,15 +169,47 @@ button {
 .burger-menu-navigation > a {
   color: #1a1a1a;
   font-size: 56px;
-  font-family: "VisueltPro-Regular", sans-serif;
+  font-family: "VisueltPro-Medium", sans-serif;
+  font-weight: 400;
 }
 .burger-menu-navigation > a:first-child {
   color: rgb(71, 84, 235);
 }
-.burger-menu-navigation__switch-language {
+.burger-menu__switch-language {
   font-size: 56px;
+  display: flex;
+  align-items: center;
+  color: #808080;
+}
+.burger-menu__switch-language span:first-child {
+  font-family: "VisueltPro-Medium", sans-serif;
+  color: rgb(71, 84, 235);
 }
 
+@media screen and (max-width: 600px) {
+  .burger-name {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .burger-inner {
+    padding: 40px 20px;
+  }
+  .burger-menu-navigation {
+    margin-bottom: 270px;
+  }
+  .burger-menu-navigation > a {
+    color: #1a1a1a;
+    font-size: 36px;
+    font-family: "VisueltPro-Medium", sans-serif;
+    font-weight: 400;
+  }
+  .burger-menu-navigation > a:first-child {
+    color: rgb(71, 84, 235);
+  }
+  .burger-menu__switch-language {
+    font-size: 36px;
+  }
+}
 .banner {
   background: radial-gradient(at -15% 95%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%), radial-gradient(circle at 60% 60%, rgba(71, 84, 235, 0.4) -30%, transparent 30%), radial-gradient(at 80% 120%, rgba(71, 84, 235, 0.3) -15%, #fff 35%);
 }

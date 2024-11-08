@@ -1,0 +1,28 @@
+@include small-tablet{
+  .burger{
+    &-name{
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    &-inner{
+      padding: 40px 20px;
+    }
+    &-menu{
+      &-navigation{
+        margin-bottom: 270px;
+        & > a {
+          color: $main-black;
+          font-size: 36px;
+          font-family: "VisueltPro-Medium", sans-serif;
+          font-weight: 400;
+        }
+        & > a:first-child{
+          color: $color-blue
+        }
+      }
+      &__switch-language{
+        font-size: 36px;
+      }
+    }
+  }
+}

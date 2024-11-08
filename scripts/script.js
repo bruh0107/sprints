@@ -1,6 +1,10 @@
-const burgerNavigation = document.querySelector('.burger-navigation')
-let isOpenModal = false;
+const burgerMenu = document.querySelector('.burger-menu')
 
 const toggleModal = () => {
-    burgerNavigation.classList.toggle('_open')
+    burgerMenu.classList.toggle('_open')
 };
+window.onresize = () => {
+    if (document.documentElement.getBoundingClientRect().width > 1050 && burgerMenu.classList.contains('_open')){
+        toggleModal()
+    }
+}

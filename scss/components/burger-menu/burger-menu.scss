@@ -8,7 +8,19 @@
     padding: 80px 56px;
   }
   &-menu{
-    display: none;
+    position: absolute;
+    z-index: 10;
+    background: radial-gradient(circle at 10% 50%, rgba(134, 51, 176, 0.08) 25%, transparent 45%),
+                radial-gradient(at 20% -90%, rgb(71, 84, 235, 0.05) 25%, transparent 45%),
+                $main-white;
+    translate: 0 -120%;
+    transition: 0.2s;
+    width: 100%;
+
+    &._open{
+      display: block;
+      translate: 0;
+    }
     &-navigation{
       display: flex;
       flex-direction: column;
@@ -18,19 +30,27 @@
       & > a {
         color: $main-black;
         font-size: 56px;
-        font-family: "VisueltPro-Regular", sans-serif;
+        font-family: "VisueltPro-Medium", sans-serif;
+        font-weight: 400;
       }
       & > a:first-child{
         color: $color-blue
       }
-      &__switch-language{
-        font-size: 56px;
+    }
+    &__switch-language{
+      font-size: 56px;
+      display: flex;
+
+      align-items: center;
+      color: $main-grey;
+
+      & span:first-child{
+        font-family: "VisueltPro-Medium", sans-serif;
+        color: $color-blue;
       }
     }
   }
 }
-
-
 
 
 

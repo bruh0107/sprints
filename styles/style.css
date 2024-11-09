@@ -24,10 +24,6 @@ a, a:link, a:visited {
   src: url("../../fonts/VisueltPro-Medium.ttf");
   font-family: "VisueltPro-Medium";
 }
-.backlight:hover {
-  box-shadow: 0 24px 24px 0 rgba(80, 93, 236, 0.25);
-}
-
 body {
   font-family: "VisueltPro-Regular", sans-serif;
   transition: 0.3s;
@@ -73,9 +69,18 @@ button {
   gap: 16px;
   align-items: center;
   color: #808080;
-}
-.header-interaction span:first-child {
   font-family: "VisueltPro-Medium", sans-serif;
+}
+.header-interaction span:first-child:hover {
+  color: #626EEB;
+}
+.header-interaction span:first-child:active {
+  color: rgb(71, 84, 235);
+}
+.header-interaction span:nth-child(3):hover {
+  color: #626EEB;
+}
+.header-interaction span:nth-child(3):active {
   color: rgb(71, 84, 235);
 }
 .header-navigation {
@@ -85,6 +90,13 @@ button {
 }
 .header-navigation__link {
   color: #808080;
+  transition: 0.3s;
+}
+.header-navigation__link:hover {
+  color: #626EEB;
+}
+.header-navigation__link:active {
+  color: #3c49dd;
 }
 .header-button {
   padding: 14px 24px;
@@ -94,6 +106,10 @@ button {
   color: #fff;
   font-size: 18px;
   font-family: "VisueltPro-Medium", sans-serif;
+}
+.header-button:hover {
+  box-shadow: 0 7px 15px 0 rgba(80, 93, 236, 0.25);
+  background: #626EEB;
 }
 
 @media screen and (max-width: 1050px) {
@@ -919,7 +935,7 @@ button {
   font-family: "VisueltPro-Regular", sans-serif;
 }
 .sale-form__agreement-blue {
-  color: #505dec;
+  color: #626EEB;
 }
 .sale-title {
   color: #1a1a1a;
@@ -1108,7 +1124,7 @@ button {
   max-width: 283px;
 }
 .feedback-form__sending .user-agreement__blue {
-  color: #505dec;
+  color: #626EEB;
 }
 .feedback-form__button {
   padding: 16px 24px;

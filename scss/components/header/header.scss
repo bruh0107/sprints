@@ -31,9 +31,21 @@
     gap: 16px;
     align-items: center;
     color: $main-grey;
+    font-family: "VisueltPro-Medium", sans-serif;
 
-    & span:first-child{
-      font-family: "VisueltPro-Medium", sans-serif;
+    & span:first-child:hover{
+      color: $hover-blue;
+    }
+
+    & span:first-child:active{
+      color: $color-blue;
+    }
+
+    & span:nth-child(3):hover{
+      color: $hover-blue;
+    }
+
+    & span:nth-child(3):active{
       color: $color-blue;
     }
   }
@@ -45,6 +57,13 @@
 
     &__link{
       color: $main-grey;
+      transition: 0.3s;
+    }
+    &__link:hover{
+      color: $hover-blue
+    }
+    &__link:active{
+      color: $inactive-blue;
     }
   }
 
@@ -56,6 +75,10 @@
     color: $main-white;
     font-size: 18px;
     font-family: "VisueltPro-Medium", sans-serif;
+  }
+  &-button:hover{
+    box-shadow: 0 7px 15px 0 rgba(80, 93, 236, 0.25);
+    background: $hover-blue;
   }
 
 }

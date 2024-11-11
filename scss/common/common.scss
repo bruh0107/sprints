@@ -12,3 +12,24 @@ button{
   cursor: pointer;
   transition: 0.3s;
 }
+
+.blue-btn{
+  @extend %btn-blue;
+}
+.white-btn{
+  @extend %btn-white;
+}
+.input{
+  transition: 0.3s;
+  color: $hover-blue;
+
+  &:hover::placeholder{
+    color: $hover-blue;
+  }
+  &:focus{
+    outline: none;
+  }
+  &:focus::placeholder{
+    color: $hover-blue;
+  }
+}

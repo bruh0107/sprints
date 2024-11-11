@@ -31,6 +31,12 @@
       align-items: center;
       width: 100%;
       max-width: fit-content;
+      transition: 0.3s;
+
+      &:hover{
+        transition: 0.3s;
+        box-shadow: 0 8px 20px 0 rgba(94, 84, 160, 0.25);
+      }
     }
     &__button{
       padding: 12px 24px;

@@ -25,6 +25,7 @@
       gap: 16px;
 
       &-field, &-textarea{
+        @extend .input;
         resize: none;
         padding: 16px;
         border: none;
@@ -33,7 +34,11 @@
         font-size: 18px;
         line-height: 135%;
         font-family: "VisueltPro-Regular", sans-serif;
-        color: $main-grey;
+
+        &:hover{
+          transition: 0.3s;
+          box-shadow: 0 8px 20px 0 rgba(94, 84, 160, 0.25);
+        }
       }
     }
 

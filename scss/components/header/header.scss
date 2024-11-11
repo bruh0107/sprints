@@ -4,6 +4,14 @@
     color: $color-blue;
     font-family: "VisueltPro-Medium", sans-serif;
     font-size: 18px;
+    transition: 0.3s;
+
+    &:hover{
+      color: $hover-blue;
+    }
+    &:active{
+      color: $inactive-blue;
+    }
   }
 
   .burger-icon{
@@ -32,21 +40,18 @@
     align-items: center;
     color: $main-grey;
     font-family: "VisueltPro-Medium", sans-serif;
+  }
 
-    & span:first-child:hover{
+  &-language{
+
+    & span:first-child, & span:nth-child(3){
+      transition: 0.3s;
+    }
+    & span:first-child:hover, & span:nth-child(3):hover{
       color: $hover-blue;
     }
-
-    & span:first-child:active{
-      color: $color-blue;
-    }
-
-    & span:nth-child(3):hover{
-      color: $hover-blue;
-    }
-
-    & span:nth-child(3):active{
-      color: $color-blue;
+    & span:first-child:active, & span:nth-child(3):active{
+      color: $inactive-blue;
     }
   }
 

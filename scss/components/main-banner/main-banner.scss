@@ -31,10 +31,31 @@
     gap: 8px;
     position: absolute;
     bottom: 80px;
+    transition: 0.3s;
+    cursor: pointer;
 
+    &:hover{
+      & span{
+        color: $hover-blue;
+        transition: 0.3s;
+      }
+      & .wheeldown{
+        & > rect, & > path{
+          stroke: $hover-blue;
+        }
+      }
+    }
     & span{
       color: $main-white;
+      transition: 0.3s;
     }
+    .wheeldown{
+      & > rect, & > path{
+        transition: 0.3s;
+        stroke: $main-white;
+      }
+    }
+
   }
   &-title{
     font-family: "VisueltPro-Medium", sans-serif;

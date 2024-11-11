@@ -2,13 +2,13 @@
   & > span {
     display: inline-block;
     color: $main-white;
+    transition: 0.3s;
   }
-
   &:hover{
     box-shadow: 0 7px 15px 0 rgba(80, 93, 236, 0.25);
     background: $hover-blue;
     & > span{
-      transform: translateY(-4%);
+      transform: translateY(-7%);
     }
   }
   &:active{
@@ -17,9 +17,17 @@
   }
 }
 %btn-white{
+  & > span {
+    display: inline-block;
+    color: $color-blue;
+    transition: 0.3s;
+  }
   &:hover{
     box-shadow: 0 7px 15px 0 rgba(80, 93, 236, 0.25);
     color: $hover-blue;
+    & > span{
+      transform: translateY(-7%);
+    }
   }
   &:active{
     color: $inactive-blue;

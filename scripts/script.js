@@ -22,35 +22,29 @@ sliderBtnFirst.onclick = () => {
     slideFirst.style.translate = '0 0'
     slideSecond.style.translate = '0 0'
     slideThird.style.translate = '0 0'
-    sliderBtnFirst.classList.add('work-scroll_blue')
-    sliderBtnSecond.classList.add('work-scroll_white')
-    sliderBtnThird.classList.add('work-scroll_white')
-    sliderBtnSecond.classList.remove('work-scroll_blue')
-    sliderBtnThird.classList.remove('work-scroll_blue')
-    sliderBtnFirst.classList.remove('work-scroll_white')
+
+    sliderBtnFirst.classList.replace('work-scroll_white', 'work-scroll_blue')
+    sliderBtnSecond.classList.replace('work-scroll_blue', 'work-scroll_white')
+    sliderBtnThird.classList.replace('work-scroll_blue', 'work-scroll_white')
 
 }
 sliderBtnSecond.onclick = () =>{
     slideFirst.style.translate = '-100% 0'
     slideSecond.style.translate = '-100% 0'
     slideThird.style.translate = '-100% 0'
-    sliderBtnFirst.classList.remove('work-scroll_blue')
-    sliderBtnSecond.classList.add('work-scroll_blue')
-    sliderBtnThird.classList.remove('work-scroll_blue')
-    sliderBtnFirst.classList.add('work-scroll_white')
-    sliderBtnThird.classList.add('work-scroll_white')
-    sliderBtnSecond.classList.remove('work-scroll_white')
+
+    sliderBtnFirst.classList.replace('work-scroll_blue', 'work-scroll_white')
+    sliderBtnSecond.classList.replace('work-scroll_white', 'work-scroll_blue')
+    sliderBtnThird.classList.replace('work-scroll_blue', 'work-scroll_white')
 
 }
 sliderBtnThird.onclick = () => {
     slideFirst.style.translate = '-200% 0'
     slideSecond.style.translate = '-200% 0'
     slideThird.style.translate = '-200% 0'
-    sliderBtnFirst.classList.remove('work-scroll_blue')
-    sliderBtnSecond.classList.remove('work-scroll_blue')
-    sliderBtnThird.classList.add('work-scroll_blue')
-    sliderBtnSecond.classList.add('work-scroll_white')
-    sliderBtnFirst.classList.add('work-scroll_white')
-    sliderBtnThird.classList.remove('work-scroll_white')
+
+    sliderBtnFirst.classList.replace('work-scroll_blue', 'work-scroll_white')
+    sliderBtnSecond.classList.replace('work-scroll_blue', 'work-scroll_white')
+    sliderBtnThird.classList.replace('work-scroll_white', 'work-scroll_blue')
 }
 

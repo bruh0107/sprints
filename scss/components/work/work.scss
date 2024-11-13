@@ -2,6 +2,16 @@
   background: radial-gradient(at 90% -10%, rgba(134, 51, 176, 0.4) 10%, rgba(71, 84, 235, 0.3) 25%, transparent 45%),
               radial-gradient(circle at 10% 70%, rgba(235, 71, 135, 0.2) 10%, transparent 30%);
 
+  &-wrapper{
+    display: flex;
+    max-width: 463px;
+    overflow: hidden;
+
+    &__block{
+      min-width: 463px;
+      transition: 0.3s;
+    }
+  }
   &-inner{
     padding: 80px 0;
   }
@@ -72,11 +82,27 @@
       font-size: 18px;
       font-family: "VisueltPro-Medium", sans-serif;
       color: $color-blue;
+      cursor: pointer;
+
+      &:hover{
+        color: $hover-blue;
+      }
     }
     &_white{
       font-family: "VisueltPro-Regular", sans-serif;
       color: $main-white;
       font-size: 18px;
+      text-shadow: 0 4px 7px rgba(80, 83, 117, 0.25);
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover{
+         color: $hover-blue;
+      }
+
+      &:active{
+        color: $inactive-blue;
+      }
     }
     &__line{
       width: 24px;

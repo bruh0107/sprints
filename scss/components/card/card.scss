@@ -41,6 +41,12 @@
     display: flex;
     flex-direction: column;
     border: 1px solid $main-white;
+    transition: 0.4s;
+
+    &:hover{
+      box-shadow: -10px 10px 25px 0 rgba(0, 0, 0, 0.25);
+      transform: translateY(1%);
+    }
   }
   &-text{
     color: $main-grey;

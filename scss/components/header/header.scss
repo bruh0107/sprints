@@ -38,20 +38,28 @@
     display: flex;
     gap: 16px;
     align-items: center;
-    color: $main-grey;
     font-family: "VisueltPro-Medium", sans-serif;
+    color: $main-grey
   }
 
   &-language{
-
-    & span:first-child, & span:nth-child(3){
+    .blue-lang{
+      color: $color-blue;
+      cursor: pointer;
       transition: 0.3s;
+
+      &:active{
+        color: $inactive-blue;
+      }
     }
-    & span:first-child:hover, & span:nth-child(3):hover{
-      color: $hover-blue;
-    }
-    & span:first-child:active, & span:nth-child(3):active{
-      color: $inactive-blue;
+    .white-lang{
+      color: $main-grey;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover{
+        color: $hover-blue
+      }
     }
   }
 

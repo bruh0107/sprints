@@ -123,17 +123,24 @@ button {
   display: flex;
   gap: 16px;
   align-items: center;
-  color: #808080;
   font-family: "VisueltPro-Medium", sans-serif;
+  color: #808080;
 }
-.header-language span:first-child, .header-language span:nth-child(3) {
+.header-language .blue-lang {
+  color: rgb(71, 84, 235);
+  cursor: pointer;
   transition: 0.3s;
 }
-.header-language span:first-child:hover, .header-language span:nth-child(3):hover {
-  color: #626EEB;
-}
-.header-language span:first-child:active, .header-language span:nth-child(3):active {
+.header-language .blue-lang:active {
   color: #3c49dd;
+}
+.header-language .white-lang {
+  color: #808080;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.header-language .white-lang:hover {
+  color: #626EEB;
 }
 .header-navigation {
   display: flex;
@@ -574,9 +581,6 @@ button {
   color: rgb(71, 84, 235);
   cursor: pointer;
 }
-.work-scroll_blue:hover {
-  color: #626EEB;
-}
 .work-scroll_white {
   font-family: "VisueltPro-Regular", sans-serif;
   color: #fff;
@@ -686,6 +690,7 @@ button {
   box-shadow: 0 4px 20px 0 rgba(25, 25, 25, 0.05);
   background: rgb(249, 249, 249);
   display: flex;
+  align-self: flex-start;
   flex-direction: column;
   border-radius: 24px;
   border: 1px solid #fff;
@@ -1131,7 +1136,20 @@ button {
   padding: 16px 48px 24px 24px;
   background: rgba(255, 255, 255, 0.2);
 }
-.faq-block__open, .faq-block__close {
+.faq-block {
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid #fff;
+  max-height: 96px;
+  transition: 0.3s;
+}
+.faq-block.open {
+  max-height: 208px;
+}
+.faq-block.open.openIcon {
+  transform: rotate(23deg);
+}
+.faq-block__open {
   border-radius: 16px;
   border: 1px solid #fff;
   overflow: hidden;

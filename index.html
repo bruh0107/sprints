@@ -29,9 +29,9 @@
                     </nav>
                     <div class="header-interaction">
                         <div class="header-language">
-                            <span>Ru</span>
-                            <span>/</span>
-                            <span>En</span>
+                            <span id="ru-btn" class="blue-lang">Ru</span>
+                            <span>&#47;</span>
+                            <span id="en-btn" class="white-lang">En</span>
                         </div>
                         <button class="header-button blue-btn"><span>Вход и регистрация</span></button>
                         <img class="profile" src="images/profile-icon.svg" alt="Profile icon" >
@@ -50,9 +50,9 @@
                     <a href="#">Обратная связь</a>
                 </nav>
                 <div class="burger-menu__switch-language">
-                    <span>Ru</span>
+                    <span id="ru-btn-mobile" class="blue-lang">Ru</span>
                     <span>&#47;</span>
-                    <span>En</span>
+                    <span id="en-btn-mobile" class="white-lang">En</span>
                 </div>
             </div>
         </div>
@@ -466,10 +466,10 @@
             </div>
             <div class="container">
                 <div class="faq-list">
-                    <article class="faq-block__open">
-                        <div class="faq-action">
+                    <article class="faq-block">
+                        <div class="faq-action" onclick="openDescription(1)">
                             <h2 class="question">Первый вопрос</h2>
-                            <img class="close" src="images/close.svg" alt="Закрыть">
+                            <img class="openIcon" src="images/open.svg" alt="Закрыть">
                         </div>
                         <p class="question-description">
                             Lorem ipsum dolor sit amet,
@@ -483,23 +483,56 @@
                             gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
                         </p>
                     </article>
-                    <article class="faq-block__close">
-                        <div class="faq-action">
+                    <article class="faq-block">
+                        <div class="faq-action" onclick="openDescription(2)">
                             <h2 class="question">Второй вопрос</h2>
-                            <img src="images/open.svg" alt="Открыть">
+                            <img class="openIcon" src="images/open.svg" alt="Открыть">
                         </div>
+                        <p class="question-description">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Massa mi aliquet eu interdum eu pellentesque amet,
+                            fermentum hendrerit. Nunc hendrerit nec risus
+                            adipiscing lacus, lobortis lectus cursus nunc.
+                            Id pellentesque dapibus eu tincidunt dui id tortor,
+                            porttitor. Tincidunt nunc praesent euismod in nisl,
+                            tellus suspendisse morbi nam. Egestas eget erat malesuada
+                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
+                        </p>
                     </article>
-                    <article class="faq-block__close">
-                        <div class="faq-action">
+                    <article class="faq-block">
+                        <div class="faq-action" onclick="openDescription(3)">
                             <h2 class="question">Третий вопрос</h2>
-                            <img src="images/open.svg" alt="Открыть">
+                            <img class="openIcon" src="images/open.svg" alt="Открыть">
                         </div>
+                        <p class="question-description">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Massa mi aliquet eu interdum eu pellentesque amet,
+                            fermentum hendrerit. Nunc hendrerit nec risus
+                            adipiscing lacus, lobortis lectus cursus nunc.
+                            Id pellentesque dapibus eu tincidunt dui id tortor,
+                            porttitor. Tincidunt nunc praesent euismod in nisl,
+                            tellus suspendisse morbi nam. Egestas eget erat malesuada
+                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
+                        </p>
                     </article>
-                    <article class="faq-block__close">
-                        <div class="faq-action">
+                    <article class="faq-block">
+                        <div class="faq-action" onclick="openDescription(4)">
                             <h2 class="question">Четвертый вопрос</h2>
-                            <img src="images/open.svg" alt="Открыть">
+                            <img class="openIcon" src="images/open.svg" alt="Открыть">
                         </div>
+                        <p class="question-description">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit.
+                            Massa mi aliquet eu interdum eu pellentesque amet,
+                            fermentum hendrerit. Nunc hendrerit nec risus
+                            adipiscing lacus, lobortis lectus cursus nunc.
+                            Id pellentesque dapibus eu tincidunt dui id tortor,
+                            porttitor. Tincidunt nunc praesent euismod in nisl,
+                            tellus suspendisse morbi nam. Egestas eget erat malesuada
+                            gravida. Et enim integer quam orci, cursus tincidunt mauris, sit.
+                        </p>
                     </article>
                 </div>
             </div>

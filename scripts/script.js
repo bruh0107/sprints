@@ -17,6 +17,8 @@ let sliderBtnThird = document.getElementById('slider3')
 let slideFirst = document.querySelector('.work-wrapper__block:nth-child(1)')
 let slideSecond = document.querySelector('.work-wrapper__block:nth-child(2)')
 let slideThird = document.querySelector('.work-wrapper__block:nth-child(3)')
+let ruLangBtn = document.getElementById('ru-btn')
+let enLangBtn = document.getElementById('en-btn')
 
 sliderBtnFirst.onclick = () => {
     slideFirst.style.translate = '0 0'
@@ -48,3 +50,15 @@ sliderBtnThird.onclick = () => {
     sliderBtnThird.classList.replace('work-scroll_white', 'work-scroll_blue')
 }
 
+ruLangBtn.onclick = () => {
+    ruLangBtn.classList.replace('white-lang', 'blue-lang')
+    enLangBtn.classList.replace('blue-lang', 'white-lang')
+}
+enLangBtn.onclick = () => {
+    enLangBtn.classList.replace('white-lang', 'blue-lang')
+    ruLangBtn.classList.replace('blue-lang', 'white-lang')
+}
+
+const $ = (el) => document.querySelector(el)
+
+const openDescription = (questionNum) => $(`.faq-block:nth-child(${questionNum})`).classList.toggle('open')

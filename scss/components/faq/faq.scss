@@ -48,7 +48,24 @@
       background: rgba(255, 255, 255, 0.2);
     }
   }
-  &-block__open, &-block__close{
+
+  &-block{
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid $main-white;
+    max-height: 96px;
+    transition: 0.3s;
+
+    &.open{
+      max-height: 208px;
+
+      &.openIcon{
+        transform: rotate(23deg);
+      }
+    }
+  }
+
+  &-block__open {
     border-radius: 16px;
     border: 1px solid $main-white;
     overflow: hidden;

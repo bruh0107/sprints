@@ -129,7 +129,7 @@ button {
 .header-language .blue-lang {
   color: rgb(71, 84, 235);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .header-language .blue-lang:active {
   color: #3c49dd;
@@ -188,7 +188,7 @@ button {
     gap: 24px;
     align-items: center;
   }
-  .header .switch-language {
+  .header-language {
     display: none;
   }
 }
@@ -237,14 +237,15 @@ button {
   gap: 24px;
   margin-bottom: 156px;
 }
-.burger-menu-navigation > a {
-  color: #1a1a1a;
-  font-size: 56px;
-  font-family: "VisueltPro-Medium", sans-serif;
-  font-weight: 400;
+.burger-menu-navigation__link {
+  color: #808080;
+  transition: 0.2s;
 }
-.burger-menu-navigation > a:first-child {
-  color: rgb(71, 84, 235);
+.burger-menu-navigation__link:hover {
+  color: #626EEB;
+}
+.burger-menu-navigation__link:active {
+  color: #3c49dd;
 }
 .burger-menu__switch-language {
   font-size: 56px;
@@ -252,9 +253,21 @@ button {
   align-items: center;
   color: #808080;
 }
-.burger-menu__switch-language span:first-child {
-  font-family: "VisueltPro-Medium", sans-serif;
+.burger-menu__switch-language .blue-lang {
   color: rgb(71, 84, 235);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.burger-menu__switch-language .blue-lang:active {
+  color: #3c49dd;
+}
+.burger-menu__switch-language .white-lang {
+  color: #808080;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.burger-menu__switch-language .white-lang:hover {
+  color: #626EEB;
 }
 
 @media screen and (max-width: 600px) {
@@ -273,9 +286,6 @@ button {
     font-size: 36px;
     font-family: "VisueltPro-Medium", sans-serif;
     font-weight: 400;
-  }
-  .burger-menu-navigation > a:first-child {
-    color: rgb(71, 84, 235);
   }
   .burger-menu__switch-language {
     font-size: 36px;
@@ -806,6 +816,16 @@ button {
 .reviews .container {
   flex: 1;
 }
+.reviews .structured {
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 24px;
+}
+.reviews .structured-block {
+  position: static;
+  transition: all 0.3s;
+}
 .reviews-inner {
   display: flex;
   flex-direction: column;
@@ -825,6 +845,7 @@ button {
   flex: 1;
   display: flex;
   flex-direction: column;
+  transition: 0.3s;
 }
 .reviews-top {
   display: flex;
@@ -893,6 +914,10 @@ button {
 }
 .reviews-structured {
   display: none;
+  text-align: center;
+  font-size: 24px;
+  color: #808080;
+  font-family: "VisueltPro-Regular", sans-serif;
 }
 .reviews-button {
   position: absolute;
@@ -930,10 +955,6 @@ button {
   }
   .reviews-structured {
     display: block;
-    text-align: center;
-    font-size: 24px;
-    color: #808080;
-    font-family: "VisueltPro-Regular", sans-serif;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1146,8 +1167,11 @@ button {
 .faq-block.open {
   max-height: 208px;
 }
-.faq-block.open.openIcon {
-  transform: rotate(23deg);
+.faq-block.open .open-icon {
+  transform: rotate(45deg);
+}
+.faq-block .open-icon {
+  transition: 0.2s;
 }
 .faq-block__open {
   border-radius: 16px;

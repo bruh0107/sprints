@@ -43,11 +43,11 @@
             <div class="burger-inner">
                 <h2 class="burger-name">Меню</h2>
                 <nav class="burger-menu-navigation">
-                    <a href="#">О компании</a>
-                    <a href="#">Тарифы</a>
-                    <a href="#">Отзывы</a>
-                    <a href="#">Q&A</a>
-                    <a href="#">Обратная связь</a>
+                    <a class="burger-menu-navigation__link" href="#">О компании</a>
+                    <a class="burger-menu-navigation__link" href="#">Тарифы</a>
+                    <a class="burger-menu-navigation__link" href="#">Отзывы</a>
+                    <a class="burger-menu-navigation__link" href="#">Q&A</a>
+                    <a class="burger-menu-navigation__link" href="#">Обратная связь</a>
                 </nav>
                 <div class="burger-menu__switch-language">
                     <span id="ru-btn-mobile" class="blue-lang">Ru</span>
@@ -432,7 +432,7 @@
                                 <img class="reviews-grade" src="images/grade-4-stars.svg" alt="Five stars">
                             </div>
                         </article>
-                        <button class="reviews-button white-btn"><span>Структурировать котиков</span></button>
+                        <button class="reviews-button white-btn" id="review-btn"><span>Структурировать котиков</span></button>
                     </div>
                     <p class="reviews-structured">Котики структурированы!</p>
                 </div>
@@ -469,7 +469,7 @@
                     <article class="faq-block">
                         <div class="faq-action" onclick="openDescription(1)">
                             <h2 class="question">Первый вопрос</h2>
-                            <img class="openIcon" src="images/open.svg" alt="Закрыть">
+                            <img class="open-icon" src="images/open.svg" alt="Открыть">
                         </div>
                         <p class="question-description">
                             Lorem ipsum dolor sit amet,
@@ -486,7 +486,7 @@
                     <article class="faq-block">
                         <div class="faq-action" onclick="openDescription(2)">
                             <h2 class="question">Второй вопрос</h2>
-                            <img class="openIcon" src="images/open.svg" alt="Открыть">
+                            <img class="open-icon" src="images/open.svg" alt="Открыть">
                         </div>
                         <p class="question-description">
                             Lorem ipsum dolor sit amet,
@@ -503,7 +503,7 @@
                     <article class="faq-block">
                         <div class="faq-action" onclick="openDescription(3)">
                             <h2 class="question">Третий вопрос</h2>
-                            <img class="openIcon" src="images/open.svg" alt="Открыть">
+                            <img class="open-icon" src="images/open.svg" alt="Открыть">
                         </div>
                         <p class="question-description">
                             Lorem ipsum dolor sit amet,
@@ -520,7 +520,9 @@
                     <article class="faq-block">
                         <div class="faq-action" onclick="openDescription(4)">
                             <h2 class="question">Четвертый вопрос</h2>
-                            <img class="openIcon" src="images/open.svg" alt="Открыть">
+                            <div class="image-container">
+                                <img class="open-icon" src="images/open.svg" alt="Открыть">
+                            </div>
                         </div>
                         <p class="question-description">
                             Lorem ipsum dolor sit amet,

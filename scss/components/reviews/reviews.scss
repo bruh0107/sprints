@@ -7,6 +7,17 @@
   .container{
     flex: 1;
   }
+  .structured{
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 24px;
+
+    &-block{
+      position: static;
+      transition: all 0.3s;
+    }
+  }
   &-inner{
     display: flex;
     flex-direction: column;
@@ -26,6 +37,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    transition: 0.3s;
   }
   &-top{
     display: flex;
@@ -95,6 +107,10 @@
   }
   &-structured{
     display: none;
+    text-align: center;
+    font-size: 24px;
+    color: $main-grey;
+    font-family: "VisueltPro-Regular", sans-serif;
   }
   &-button{
     position: absolute;

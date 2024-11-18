@@ -19,6 +19,11 @@ let slideSecond = document.querySelector('.work-wrapper__block:nth-child(2)')
 let slideThird = document.querySelector('.work-wrapper__block:nth-child(3)')
 let ruLangBtn = document.getElementById('ru-btn')
 let enLangBtn = document.getElementById('en-btn')
+let ruLangBtnMob = document.getElementById('ru-btn-mobile')
+let enLangBtnMob = document.getElementById('en-btn-mobile')
+let catList = document.querySelector('.reviews-list')
+let catListElem = document.querySelectorAll('.reviews-block')
+let reviewBtn = document.getElementById('review-btn')
 
 sliderBtnFirst.onclick = () => {
     slideFirst.style.translate = '0 0'
@@ -59,6 +64,24 @@ enLangBtn.onclick = () => {
     ruLangBtn.classList.replace('blue-lang', 'white-lang')
 }
 
+ruLangBtnMob.onclick = () => {
+    ruLangBtnMob.classList.replace('white-lang', 'blue-lang')
+    enLangBtnMob.classList.replace('blue-lang', 'white-lang')
+}
+
+enLangBtnMob.onclick = () => {
+    enLangBtnMob.classList.replace('white-lang', 'blue-lang')
+    ruLangBtnMob.classList.replace('blue-lang', 'white-lang')
+}
+
 const $ = (el) => document.querySelector(el)
 
 const openDescription = (questionNum) => $(`.faq-block:nth-child(${questionNum})`).classList.toggle('open')
+
+reviewBtn.onclick = () => {
+    catList.classList.toggle('structured')
+    catListElem.forEach(item => {
+        item.classList.toggle('structured-block')
+    })
+    reviewBtn.style.display = 'none'
+}

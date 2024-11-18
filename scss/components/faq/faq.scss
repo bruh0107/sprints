@@ -59,9 +59,12 @@
     &.open{
       max-height: 208px;
 
-      &.openIcon{
-        transform: rotate(23deg);
+      .open-icon{
+        transform: rotate(45deg);
       }
+    }
+    .open-icon{
+      transition: 0.2s;
     }
   }
 

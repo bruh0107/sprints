@@ -27,14 +27,15 @@
       gap: 24px;
       margin-bottom: 156px;
 
-      & > a {
-        color: $main-black;
-        font-size: 56px;
-        font-family: "VisueltPro-Medium", sans-serif;
-        font-weight: 400;
+      &__link{
+        color: $main-grey;
+        transition: 0.2s;
       }
-      & > a:first-child{
-        color: $color-blue
+      &__link:hover{
+        color: $hover-blue
+      }
+      &__link:active{
+        color: $inactive-blue;
       }
     }
     &__switch-language{
@@ -44,9 +45,23 @@
       align-items: center;
       color: $main-grey;
 
-      & span:first-child{
-        font-family: "VisueltPro-Medium", sans-serif;
+      .blue-lang{
         color: $color-blue;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:active{
+          color: $inactive-blue;
+        }
+      }
+      .white-lang{
+        color: $main-grey;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+          color: $hover-blue
+        }
       }
     }
   }

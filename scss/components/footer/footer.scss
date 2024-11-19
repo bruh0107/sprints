@@ -28,13 +28,30 @@
   .scroll{
     display: flex;
     gap: 8px;
-    align-items: baseline;
+    color: $main-white;
+    align-items: center;
+    transition: 0.3s;
 
     &-text{
       font-size: 18px;
       line-height: 135%;
-      color: $main-white;
       font-family: "VisueltPro-Regular", sans-serif;
+      transition: 0.2s;
+
+    }
+    &:hover{
+      color: $lt-grey;
+
+      & .scroll-arrow{
+        display: none;
+      }
+      & .scroll-arrow-long{
+        display: block;
+      }
+    }
+
+    &-arrow-long{
+      display: none;
     }
   }
 }

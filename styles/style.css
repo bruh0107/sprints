@@ -831,6 +831,7 @@ button {
   flex-direction: column;
   flex: 1;
   min-height: 100%;
+  gap: 40px;
 }
 .reviews-title {
   font-size: 36px;
@@ -876,10 +877,14 @@ button {
 .reviews-block {
   max-width: 628px;
   backdrop-filter: blur(240px);
-  box-shadow: -2px 4px 20px 0 rgba(25, 25, 25, 0.03);
+  box-shadow: -2px 4px 20px 0 rgba(25, 25, 25, 0.03), 0 8px 20px 0 rgba(94, 84, 160, 0.25);
   background: rgb(249, 249, 249);
   position: absolute;
   border-radius: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  left: 0;
+  top: 0;
 }
 .reviews-date {
   font-size: 18px;
@@ -893,24 +898,21 @@ button {
   color: #808080;
   font-family: "VisueltPro-Regular", sans-serif;
 }
-.reviews-block:nth-child(1) {
+.reviews-block.block-1 {
   z-index: 1;
-  top: 96px;
+  transform: translate(0, 56px);
 }
-.reviews-block:nth-child(2) {
-  z-index: 2;
-  top: 360px;
-  left: 164px;
-}
-.reviews-block:nth-child(3) {
+.reviews-block.block-2 {
   z-index: 4;
-  top: 40px;
-  left: 326px;
+  transform: translate(52%, 0);
 }
-.reviews-block:nth-child(4) {
+.reviews-block.block-3 {
   z-index: 3;
-  top: 232px;
-  right: 0;
+  transform: translate(104%, 192px);
+}
+.reviews-block.block-4 {
+  z-index: 2;
+  transform: translate(25%, 320px);
 }
 .reviews-structured {
   display: none;
@@ -1163,6 +1165,7 @@ button {
   border: 1px solid #fff;
   max-height: 96px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .faq-block.open {
   max-height: 208px;
@@ -1423,6 +1426,10 @@ button {
     text-transform: uppercase;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 24px;
   background: #f2f2f2;

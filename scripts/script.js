@@ -22,8 +22,9 @@ let enLangBtn = document.getElementById('en-btn')
 let ruLangBtnMob = document.getElementById('ru-btn-mobile')
 let enLangBtnMob = document.getElementById('en-btn-mobile')
 let catList = document.querySelector('.reviews-list')
-let catListElem = document.querySelectorAll('.reviews-block')
+let catListElems = document.querySelectorAll('.reviews-block')
 let reviewBtn = document.getElementById('review-btn')
+let reviewStructText = document.querySelector('.reviews-structured')
 
 sliderBtnFirst.onclick = () => {
     slideFirst.style.translate = '0 0'
@@ -80,8 +81,30 @@ const openDescription = (questionNum) => $(`.faq-block:nth-child(${questionNum})
 
 reviewBtn.onclick = () => {
     catList.classList.toggle('structured')
-    catListElem.forEach(item => {
+    catListElems.forEach(item => {
         item.classList.toggle('structured-block')
     })
     reviewBtn.style.display = 'none'
+    reviewStructText.style.display = 'block'
+
+    catListElems.forEach(item => {
+        item.style.transform = 'none'
+    })
 }
+
+let classArr = ['block-1', 'block-2', 'block-3', 'block-4']
+
+catListElems.forEach(item => {
+    item.onclick = () => {
+        let lastElem = classArr.shift()
+        classArr.push(lastElem)
+        catListElems.forEach((element, index) => {
+            element.classList.add(classArr[index])
+            classArr.forEach((item, num) => {
+                if (classArr[index] !== item){
+                    element.classList.remove(item)
+                }
+            })
+        })
+    }
+})

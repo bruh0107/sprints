@@ -11,6 +11,10 @@
 @import "components/feedback";
 @import "components/footer";
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   padding: 24px;
   background: $main-bg;

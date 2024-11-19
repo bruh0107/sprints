@@ -23,6 +23,7 @@
     flex-direction: column;
     flex: 1;
     min-height: 100%;
+    gap: 40px;
   }
   &-title{
     font-size: 36px;
@@ -69,10 +70,14 @@
   &-block{
     max-width: 628px;
     backdrop-filter: blur(240px);
-    box-shadow: -2px 4px 20px 0 rgba(25, 25, 25, 0.03);
+    box-shadow: -2px 4px 20px 0 rgba(25, 25, 25, 0.03), 0 8px 20px 0 rgba(94, 84, 160, 0.25);
     background: rgba(249, 249, 249);
     position: absolute;
     border-radius: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+    left: 0;
+    top: 0;
   }
   &-date{
     font-size: 18px;
@@ -86,24 +91,21 @@
     color: $main-grey;
     font-family: "VisueltPro-Regular", sans-serif;
   }
-  &-block:nth-child(1){
+  &-block.block-1{
     z-index: 1;
-    top: 96px;
+    transform: translate(0, 56px);
   }
-  &-block:nth-child(2){
-    z-index: 2;
-    top: 360px;
-    left: 164px;
-  }
-  &-block:nth-child(3){
+  &-block.block-2{
     z-index: 4;
-    top: 40px;
-    left: 326px;
+    transform: translate(52%, 0);
   }
-  &-block:nth-child(4){
+  &-block.block-3{
     z-index: 3;
-    top: 232px;
-    right: 0;
+    transform: translate(104%, 192px);
+  }
+  &-block.block-4{
+    z-index: 2;
+    transform: translate(25%, 320px);
   }
   &-structured{
     display: none;

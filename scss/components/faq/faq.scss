@@ -55,6 +55,7 @@
     border: 1px solid $main-white;
     max-height: 96px;
     transition: 0.3s;
+    cursor: pointer;
 
     &.open{
       max-height: 208px;
